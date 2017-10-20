@@ -1,0 +1,26 @@
+# Welcome to Madpy!
+
+![The Madpy Magpy.](img/madpy-logo.pdf)
+
+# Organizers
+
+```{r echo=FALSE, results="hide"}
+gridExtra::grid.arrange(
+  crotchet::read_image("img/pierce.jpg"),
+  crotchet::read_image("img/dan.jpg"),
+  nrow = 1
+) 
+```
+
+# Madpy on Slack
+
+`slack.madpy.com` to sign up.  
+`madpy.slack.com` to sign in.
+
+# Madpy meetings
+
+![Bread.](img/bread.jpg)
+
+# Next month
+
+Thursday, November 9, 2017
