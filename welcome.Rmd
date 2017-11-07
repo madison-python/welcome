@@ -1,13 +1,20 @@
+---
+output:
+  beamer_presentation:
+    theme: metropolis
+---
+`r source("config.R")`
+
 # Welcome to Madpy!
 
 ![The Madpy Magpy.](img/madpy-logo.pdf)
 
 # Organizers
 
-```{r echo=FALSE, results="hide"}
-gridExtra::grid.arrange(
-  crotchet::read_image("img/pierce.jpg"),
-  crotchet::read_image("img/dan.jpg"),
+```{r organizers, fig.cap="Pierce Edmiston and Dan Imhoff."}
+grid.arrange(
+  read_image("img/pierce.jpg"),
+  read_image("img/dan.jpg"),
   nrow = 1
 ) 
 ```
@@ -19,8 +26,16 @@ gridExtra::grid.arrange(
 
 # Madpy meetings
 
-![Bread.](img/bread.jpg)
+```{r bread, fig.cap="Bread.", out.width="2in"}
+draw_image("img/bread.jpg")
+```
+
+# The suggestion box: [bit.ly/madpy-suggestions](https://bit.ly/madpy-suggestions)
+
+```{r suggestions, results="asis"}
+kable(responses[title])
+```
 
 # Next month
 
-Thursday, November 9, 2017
+Thursday, December 14, 2017

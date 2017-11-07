@@ -1,1 +1,4 @@
 slides.pdf
+.httr-oauth
+*cache/
+*files/
