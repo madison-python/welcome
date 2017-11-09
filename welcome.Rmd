@@ -13,8 +13,8 @@ output:
 
 ```{r organizers, fig.cap="Pierce Edmiston and Dan Imhoff."}
 grid.arrange(
-  read_image("img/pierce.jpg"),
-  read_image("img/dan.jpg"),
+  read_image("img/pierce.jpg", width = 0.9),
+  read_image("img/dan.jpg", width = 0.9),
   nrow = 1
 ) 
 ```
@@ -36,6 +36,8 @@ draw_image("img/bread.jpg")
 kable(responses[title])
 ```
 
-# Next month
+# Next month: Thursday, December 14, 2017
 
-Thursday, December 14, 2017
+```{r pytest, out.width="1.5in"}
+draw_image("img/pytest.png")
+```
