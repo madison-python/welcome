@@ -38,7 +38,7 @@ grid.arrange(
 
 # Madpy meetings
 
-```{r bread, fig.cap="Bread.", out.width="2in"}
+```{r bread, fig.cap="Bread."}
 draw_image("img/bread.png")
 ```
 
@@ -50,6 +50,6 @@ kable(responses[title])
 
 # Next month: Thursday, December 14, 2017
 
-```{r pytest, out.width="1.5in"}
+```{r pytest}
 draw_image("img/pytest.png")
 ```

@@ -18,10 +18,7 @@ Madpy on Slack
 Madpy meetings
 ==============
 
-<img src="README_files/figure-markdown_strict/bread-1.png" alt="Bread." width="2in" />
-<p class="caption">
-Bread.
-</p>
+![Bread.](README_files/figure-markdown_strict/bread-1.png)
 
 The suggestion box: [bit.ly/madpy-suggestions](https://bit.ly/madpy-suggestions)
 ================================================================================
@@ -48,4 +45,4 @@ The suggestion box: [bit.ly/madpy-suggestions](https://bit.ly/madpy-suggestions)
 Next month: Thursday, December 14, 2017
 =======================================
 
-<img src="README_files/figure-markdown_strict/pytest-1.png" width="1.5in" />
+![](README_files/figure-markdown_strict/pytest-1.png)
