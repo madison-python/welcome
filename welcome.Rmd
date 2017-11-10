@@ -39,7 +39,7 @@ grid.arrange(
 # Madpy meetings
 
 ```{r bread, fig.cap="Bread.", out.width="2in"}
-draw_image("img/bread.jpg")
+draw_image("img/bread.png")
 ```
 
 # The suggestion box: [bit.ly/madpy-suggestions](https://bit.ly/madpy-suggestions)

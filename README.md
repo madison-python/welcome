@@ -1,7 +1,7 @@
 Welcome to Madpy!
 =================
 
-![The Madpy Magpy.](img/madpy-logo.pdf)
+![The Madpy Magpy.](img/madpy-logo.png)
 
 Organizers
 ==========
