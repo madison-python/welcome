@@ -3,7 +3,19 @@ output:
   beamer_presentation:
     theme: metropolis
 ---
-`r source("config.R")`
+```{r config, include=FALSE}
+library(knitr)
+library(magrittr)
+library(googlesheets)
+library(gridExtra)
+library(crotchet)
+
+opts_chunk$set(echo=FALSE, results="hide", cache=TRUE)
+
+responses <- gs_title("suggestion-box-responses", verbose = FALSE) %>%
+  gs_read(verbose = FALSE)
+title <- colnames(responses)[2]
+```
 
 # Welcome to Madpy!
 
@@ -16,7 +28,7 @@ grid.arrange(
   read_image("img/pierce.jpg", width = 0.9),
   read_image("img/dan.jpg", width = 0.9),
   nrow = 1
-) 
+)
 ```
 
 # Madpy on Slack
@@ -26,8 +38,8 @@ grid.arrange(
 
 # Madpy meetings
 
-```{r bread, fig.cap="Bread.", out.width="2in"}
-draw_image("img/bread.jpg")
+```{r bread, fig.cap="Bread."}
+draw_image("img/bread.png")
 ```
 
 # The suggestion box: [bit.ly/madpy-suggestions](https://bit.ly/madpy-suggestions)
@@ -38,6 +50,6 @@ kable(responses[title])
 
 # Next month: Thursday, December 14, 2017
 
-```{r pytest, out.width="1.5in"}
+```{r pytest}
 draw_image("img/pytest.png")
 ```

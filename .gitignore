@@ -2,3 +2,4 @@ slides.pdf
 .httr-oauth
 *cache/
 *files/
+!README_files/
