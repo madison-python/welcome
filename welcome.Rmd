@@ -48,8 +48,8 @@ draw_image("img/bread.png")
 kable(responses[title])
 ```
 
-# Next month: Thursday, December 14, 2017
+# Next month: Thursday, January 11, 2017
 
-```{r pytest}
-draw_image("img/pytest.png")
-```
+Planning a paired programming night.
+
+Anyone familiar with Agile software development?
