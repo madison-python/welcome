@@ -9,11 +9,19 @@ Organizers
 ![Pierce Edmiston and Dan
 Imhoff.](README_files/figure-markdown_strict/organizers-1.png)
 
-Madpy on Slack
-==============
+Want more Madpy?
+================
+
+Join us on Slack
+----------------
 
 `slack.madpy.com` to sign up.  
 `madpy.slack.com` to sign in.
+
+Subscribe to our googlegroups
+-----------------------------
+
+Send a blank email to: `madpy+subscribe@googlegroups.com`
 
 Madpy meetings
 ==============
@@ -51,9 +59,12 @@ The suggestion box: [bit.ly/madpy-suggestions](https://bit.ly/madpy-suggestions)
 </tbody>
 </table>
 
-Next month: Thursday, January 11, 2017
-======================================
+Calendar
+========
 
-Planning a paired programming night.
-
-Anyone familiar with Agile software development?
+-   Pair Night!
+-   February 8: Generators part 2: promises and lazy evaluation (Ryan
+    Prior)
+-   March 8: Machine learning with scikit-learn (James Bourbeau)
+-   April 12: Deep learning in python (Devin Conathan)
+-   May 10: Data munging with pandas (Ed Rogers?)
