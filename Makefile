@@ -13,3 +13,7 @@ img/madpy-logo.png: img/madpy-logo.pdf
    -flatten       \
    -sharpen 0x1.0 \
     $@
+img/scikit-learn-border.png: img/scikit-learn.png
+	convert $< -border 60x40 -quality 100 $@
+img/scikit-learn.png:
+	curl -o $@ http://scikit-learn.org/stable/_static/scikit-learn-logo-small.png
