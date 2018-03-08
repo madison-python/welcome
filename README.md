@@ -16,16 +16,8 @@ Madpy is a community group and is open to all. We are committed to a
 safe, professional environment for everyone and will not tolerate
 harassment or offensive behavior of any kind.
 
-By being here, you accept to our Code of Conduct, which you can read in
-its entirety here:
-
+By being here, you accept to our Code of Conduct:  
 [github.com/madison-python/code-of-conduct](https://github.com/madison-python/code-of-conduct)
-
-**Information listed in the CoC**
-
--   Examples of positive and negative behaviors.
--   Procedure for responding to harrassment or offensive behavior.
--   Explanation of record keeping.
 
 Want more Madpy?
 ================
@@ -80,26 +72,21 @@ The suggestion box: [bit.ly/madpy-suggestions](https://bit.ly/madpy-suggestions)
 Calendar
 ========
 
--   February 28: Pair Night!
--   March 8: Machine learning with scikit-learn (James Bourbeau)
--   April 12: Deep learning in python (Devin Conathan)
--   May 10: Data munging with pandas (Ed Rogers)
+-   **March 8: Supervised machine learning with scikit-learn (James
+    Bourbeau)**
+-   **April 12: Deep learning in python (Devin Conathan)**
+-   **May 10: Data munging with pandas (Ed Rogers)**
 -   June 14: Intro to descriptors: Surprisingly simple (Jake Zimmerman)
 -   July 12: Advanced descriptors: I lied (Jake Zimmerman)
 -   August 9: Django! (Willy Hakizimana)
 
-Pair Night!
-===========
+Reflecting on our first Pair Night
+==================================
 
-6p at Industrious
+Surveys!
 
-Schedule of events:
+Positives  
+Venue, Trello board
 
--   Show up and make a nametag.
--   Find a project ([trello.com/madpy](https://trello.com/madpy)), find
-    partner (or partners).
--   Pair \#1
--   Pair \#2
-
-For more information, see
-[github.com/madison-python/pair-night](https://github.com/madison-python/pair-night).
+Room for improvement  
+Schedule, More people with projects
