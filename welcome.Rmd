@@ -4,17 +4,9 @@ output:
     theme: metropolis
 ---
 ```{r config, include=FALSE}
-library(knitr)
-library(magrittr)
-library(googlesheets)
 library(gridExtra)
 library(crotchet)
-
-opts_chunk$set(echo=FALSE, results="hide", cache=TRUE)
-
-responses <- gs_title("suggestion-box-responses", verbose = FALSE) %>%
-  gs_read(verbose = FALSE)
-title <- colnames(responses)[2]
+knitr::opts_chunk$set(echo=FALSE, results="hide", cache=TRUE)
 ```
 
 # Welcome to Madpy!
@@ -33,14 +25,16 @@ grid.arrange(
 
 # Code of conduct
 
-Madpy is a community group and is open to all. We are committed to a safe,
-professional environment for everyone and will not tolerate harassment or
-offensive behavior of any kind.
+Madpy is a community group and open to everyone. We are committed to a safe,
+professional environment for everyone, and will not tolerate harassment or
+offensive behavior.
 
-By being here, you accept to our Code of Conduct:  
 [github.com/madison-python/code-of-conduct](https://github.com/madison-python/code-of-conduct)
 
 # Want more Madpy?
+
+[meetup.com/madpython](https://www.meetup.com/madpython/)  
+[github.com/madison-python](https://github.com/madison-python)
 
 ## Join us on Slack
 
@@ -57,27 +51,11 @@ Send a blank email to: `madpy+subscribe@googlegroups.com`
 draw_image("img/bread.png", width=0.25)
 ```
 
-# The suggestion box: [bit.ly/madpy-suggestions](https://bit.ly/madpy-suggestions)
-
-```{r suggestions, results="asis"}
-kable(responses[title])
-```
-
 # Calendar
 
-- **March 8: Supervised machine learning with scikit-learn (James Bourbeau)**
 - **April 12: Deep learning in python (Devin Conathan)**
 - **May 10: Data munging with pandas (Ed Rogers)**
 - June 14: Intro to descriptors: Surprisingly simple (Jake Zimmerman)
 - July 12: Advanced descriptors: I lied (Jake Zimmerman)
 - August 9: Django! (Willy Hakizimana)
-
-# Reflecting on our first Pair Night
-
-Surveys!
-
-Positives
-: Venue, Trello board
-
-Room for improvement
-: Schedule, More people with projects
+- August X: Pair Night?
