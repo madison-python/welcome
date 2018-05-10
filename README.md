@@ -43,9 +43,15 @@ Madpy meetings
 Calendar
 ========
 
--   **April 12: Deep learning in python (Devin Conathan)**
 -   **May 10: Data munging with pandas (Ed Rogers)**
 -   June 14: Intro to descriptors: Surprisingly simple (Jake Zimmerman)
 -   July 12: Advanced descriptors: I lied (Jake Zimmerman)
 -   August 9: Django! (Willy Hakizimana)
 -   August X: Pair Night?
+-   September ?: Rust for Pythonistas (Josh Karpel)
+
+Miles Gilman Edmiston, about to sneeze
+======================================
+
+![Miles Gilman
+Edmiston.](README_files/figure-markdown_strict/miles-1.png)
