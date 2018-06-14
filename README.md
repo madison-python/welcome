@@ -12,9 +12,9 @@ Imhoff.](README_files/figure-markdown_strict/organizers-1.png)
 Code of conduct
 ===============
 
-Madpy is a community group and open to everyone. We are committed to a
-safe, professional environment for everyone, and will not tolerate
-harassment or offensive behavior.
+Madpy is a community group and open to everyone.  
+We are committed to a safe, professional environment.  
+Harassment or offensive behavior will not be tolerated.
 
 [github.com/madison-python/code-of-conduct](https://github.com/madison-python/code-of-conduct)
 
@@ -43,15 +43,11 @@ Madpy meetings
 Calendar
 ========
 
--   **May 10: Data munging with pandas (Ed Rogers)**
--   June 14: Intro to descriptors: Surprisingly simple (Jake Zimmerman)
--   July 12: Advanced descriptors: I lied (Jake Zimmerman)
+-   **June 14: Intro to descriptors: Surprisingly simple (Jake
+    Zimmerman)**
+-   **July 12: Advanced descriptors: I lied (Jake Zimmerman)**
+-   August 1/29: Pair Night?
 -   August 9: Django! (Willy Hakizimana)
--   August X: Pair Night?
--   September ?: Rust for Pythonistas (Josh Karpel)
-
-Miles Gilman Edmiston, about to sneeze
-======================================
-
-![Miles Gilman
-Edmiston.](README_files/figure-markdown_strict/miles-1.png)
+-   *September 6: Rust for Pythonistas (Josh Karpel)*
+-   *October 4: ?*
+-   *November 8: Ruby through a Python lens (Casey Brant)*
