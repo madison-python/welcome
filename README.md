@@ -6,8 +6,8 @@ Welcome to Madpy!
 Organizers
 ==========
 
-![Pierce Edmiston and Dan
-Imhoff.](README_files/figure-markdown_strict/organizers-1.png)
+![Pierce Edmiston, Dan Imhoff, and William
+Hakizimana.](README_files/figure-markdown_strict/organizers-1.png)
 
 Code of conduct
 ===============
@@ -42,24 +42,46 @@ Madpy meetings
 
 ![Bread.](README_files/figure-markdown_strict/bread-1.png)
 
+Recap
+=====
+
+August 20: Intro to Python for Data workshop
+
 Annoucements
 ============
 
-August 20: Intro to Python for Data session at Forward Fest  
 October 18: AllDayDevOps ([alldaydevops.com](https://alldaydevops.com))
 
 Madpy calendar
 ==============
 
--   **August 9: Django! (Willy Hakizimana)**
--   *September 6: Pair programming Q&A | Rust for Pythonistas (Josh
-    Karpel)*
--   *October 4: JavaScript (Dan) | R and Python (Pierce)*
--   *November 8: Ruby through a Python lens (Casey Brant)*
--   December 13: ?
+-   **Pair programming Q&A | Rust for Pythonistas**
+-   **September 13: Pair Night**
+-   October 4: Polygot Bites Lightning talks
+    -   *Kotlin, Elm, Dot, Stata, underscore.js*
+-   November 8: Ruby through a Python lens (Casey Brant)
+-   December 13: Python Typings (Nick Hyatt)
 
-Goings on about town
-====================
+Pair Night recap
+================
 
--   **Tonight:** Madison Night Market
--   2018 AUDL Championship (Sat @ 5PM and 8PM. Sun @ 1PM)
+![Photo by
+@TyHitzeman.](README_files/figure-markdown_strict/pair-night-v1-1.png)
+
+Pair Night
+==========
+
+Project ideas board:  
+[trello.com/madpy](https://trello.com/madpy)
+
+GitHub repo:  
+[github.com/madison-python/pair-night](https://github.com/madison-python/pair-night)
+
+RSVP to the Meetup event:  
+[bit.ly/pair-night-v2](https://bit.ly/pair-night-v2)
+
+Pair Night Q&A
+==============
+
+Jim Remsik, @jremsikjr
+----------------------
