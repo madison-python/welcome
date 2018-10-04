@@ -45,7 +45,10 @@ Madpy meetings
 Recap
 =====
 
-August 20: Intro to Python for Data workshop
+-   Sept. 9: Pair programming Q&A
+-   Sept. 13: Pair Night
+
+![](README_files/figure-markdown_strict/pair-night-2018-09-13-1.png)
 
 Annoucements
 ============
@@ -55,33 +58,24 @@ October 18: AllDayDevOps ([alldaydevops.com](https://alldaydevops.com))
 Madpy calendar
 ==============
 
--   **Pair programming Q&A | Rust for Pythonistas**
--   **September 13: Pair Night**
--   October 4: Polygot Bites Lightning talks
+-   October 4: Polyglot Bytes Lightning talks
     -   *Kotlin, Elm, Dot, Stata, underscore.js*
--   November 8: Ruby through a Python lens (Casey Brant)
+-   November 8: Beyond Batteries - A look at Elixir (Casey Brant)
 -   December 13: Python Typings (Nick Hyatt)
 
-Pair Night recap
-================
+2019
+----
 
-![Photo by
-@TyHitzeman.](README_files/figure-markdown_strict/pair-night-v1-1.png)
+1/10, *2/7*, 3/14, 4/11, 5/9, 6/13, 7/11, 8/8, *9/5*, 10/10, 11/14,
+12/12
 
-Pair Night
-==========
+Polyglot Bytes Lighting talks
+=============================
 
-Project ideas board:  
-[trello.com/madpy](https://trello.com/madpy)
+**15 minutes!**
 
-GitHub repo:  
-[github.com/madison-python/pair-night](https://github.com/madison-python/pair-night)
-
-RSVP to the Meetup event:  
-[bit.ly/pair-night-v2](https://bit.ly/pair-night-v2)
-
-Pair Night Q&A
-==============
-
-Jim Remsik, @jremsikjr
-----------------------
+-   Elm
+-   Kotlin
+-   Dot
+-   Underscore.js
+-   C++
