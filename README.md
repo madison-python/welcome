@@ -50,7 +50,7 @@ Recap
 
 ![](README_files/figure-markdown_strict/pair-night-2018-09-13-1.png)
 
-Annoucements
+Announcements
 ============
 
 October 18: AllDayDevOps ([alldaydevops.com](https://alldaydevops.com))
