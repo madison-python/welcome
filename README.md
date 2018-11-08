@@ -42,40 +42,11 @@ Madpy meetings
 
 ![Bread.](README_files/figure-markdown_strict/bread-1.png)
 
-Recap
-=====
-
--   Sept. 9: Pair programming Q&A
--   Sept. 13: Pair Night
-
-![](README_files/figure-markdown_strict/pair-night-2018-09-13-1.png)
-
-Announcements
-============
-
-October 18: AllDayDevOps ([alldaydevops.com](https://alldaydevops.com))
-
 Madpy calendar
 ==============
 
--   October 4: Polyglot Bytes Lightning talks
-    -   *Kotlin, Elm, Dot, Stata, underscore.js*
 -   November 8: Beyond Batteries - A look at Elixir (Casey Brant)
--   December 13: Python Typings (Nick Hyatt)
-
-2019
-----
-
-1/10, *2/7*, 3/14, 4/11, 5/9, 6/13, 7/11, 8/8, *9/5*, 10/10, 11/14,
-12/12
-
-Polyglot Bytes Lighting talks
-=============================
-
-**15 minutes!**
-
--   Elm
--   Kotlin
--   Dot
--   Underscore.js
--   C++
+-   December 13: PyTorch (Scott Sievert)
+-   January 10: Python Typings (Nick Hyatt)
+-   February 7: Dask (James Bourbeau)
+-   March 14: Flask (Whil Hentzen)
