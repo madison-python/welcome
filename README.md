@@ -45,8 +45,8 @@ Madpy meetings
 Madpy calendar
 ==============
 
--   November 8: Beyond Batteries - A look at Elixir (Casey Brant)
 -   December 13: PyTorch (Scott Sievert)
 -   January 10: Python Typings (Nick Hyatt)
 -   February 7: Dask (James Bourbeau)
 -   March 14: Flask (Whil Hentzen)
+-   April 11: Deploying a machine learning API (Devin Conathan)

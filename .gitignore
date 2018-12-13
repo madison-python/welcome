@@ -3,3 +3,4 @@ slides.pdf
 *cache/
 *files/
 !README_files/
+.Rproj.user
