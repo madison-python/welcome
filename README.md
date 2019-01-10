@@ -45,7 +45,6 @@ Madpy meetings
 Madpy calendar
 ==============
 
--   December 13: PyTorch (Scott Sievert)
 -   January 10: Python Typings (Nick Hyatt)
 -   February 7: Dask (James Bourbeau)
 -   March 14: Flask (Whil Hentzen)
