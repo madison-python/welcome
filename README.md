@@ -42,10 +42,22 @@ Madpy meetings
 
 ![Bread.](README_files/figure-markdown_strict/bread-1.png)
 
+Topics
+======
+
+-   python packaging ecosystem
+-   python data model
+-   lighting talks on hobby projects
+-   asyncio
+-   microservices
+-   python syntax
+-   metaclasses
+-   decorators
+
 Madpy calendar
 ==============
 
--   January 10: Python Typings (Nick Hyatt)
 -   February 7: Dask (James Bourbeau)
 -   March 14: Flask (Whil Hentzen)
 -   April 11: Deploying a machine learning API (Devin Conathan)
+-   May 9: Zendesk!
