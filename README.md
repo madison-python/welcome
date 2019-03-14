@@ -9,6 +9,27 @@ Organizers
 ![Pierce Edmiston, Dan Imhoff, and William
 Hakizimana.](README_files/figure-markdown_strict/organizers-1.png)
 
+Sponsors
+========
+
+![](README_files/figure-markdown_strict/twilio-1.png)
+
+Sponsors
+========
+
+PerBlue
+
+-   [Senior Data
+    Analyst](https://perblue.com/Careers.aspx#op-277104-senior-data-analyst)
+-   [Data
+    Analyst](https://perblue.com/Careers.aspx#op-305962-data-analyst)
+-   [Software Developer
+    (Front-End/Tools)](https://perblue.com/Careers.aspx#op-294641-software-developer-frontendtools)
+
+Go to
+[github.com/madison-python/welcome](https://github.com/madison-python/welcome)
+for links.
+
 Code of conduct
 ===============
 
@@ -42,22 +63,26 @@ Madpy meetings
 
 ![Bread.](README_files/figure-markdown_strict/bread-1.png)
 
+Madpy calendar
+==============
+
+-   **March 14: Flask (Whil Hentzen)**
+-   April 11: Deploying a machine learning API (Devin Conathan)
+-   May 9: Zendesk!
+-   June 13: Python Environments (???)
+-   July 11: Python Data Model (Josh Karpel)
+
 Topics
 ======
 
--   python packaging ecosystem
--   python data model
+**Vote one topic up in the queue, or append a new one.**
+
 -   lighting talks on hobby projects
 -   asyncio
 -   microservices
 -   python syntax
 -   metaclasses
 -   decorators
-
-Madpy calendar
-==============
-
--   February 7: Dask (James Bourbeau)
--   March 14: Flask (Whil Hentzen)
--   April 11: Deploying a machine learning API (Devin Conathan)
--   May 9: Zendesk!
+-   C-extensions
+-   numba
+-   cupy
