@@ -24,13 +24,7 @@ grid.arrange(
 )
 ```
 
-# Sponsors
-
-```{r twilio}
-draw_image("img/twilio.png")
-```
-
-# Sponsors
+# Sponsor
 
 PerBlue
 

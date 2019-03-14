@@ -9,13 +9,8 @@ Organizers
 ![Pierce Edmiston, Dan Imhoff, and William
 Hakizimana.](README_files/figure-markdown_strict/organizers-1.png)
 
-Sponsors
-========
-
-![](README_files/figure-markdown_strict/twilio-1.png)
-
-Sponsors
-========
+Sponsor
+=======
 
 PerBlue
 
