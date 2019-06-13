@@ -12,18 +12,7 @@ Hakizimana.](README_files/figure-markdown_strict/organizers-1.png)
 Sponsor
 =======
 
-PerBlue
-
--   [Senior Data
-    Analyst](https://perblue.com/Careers.aspx#op-277104-senior-data-analyst)
--   [Data
-    Analyst](https://perblue.com/Careers.aspx#op-305962-data-analyst)
--   [Software Developer
-    (Front-End/Tools)](https://perblue.com/Careers.aspx#op-294641-software-developer-frontendtools)
-
-Go to
-[github.com/madison-python/welcome](https://github.com/madison-python/welcome)
-for links.
+![](README_files/figure-markdown_strict/elastic-1.png)
 
 Code of conduct
 ===============
@@ -61,23 +50,6 @@ Madpy meetings
 Madpy calendar
 ==============
 
--   **March 14: Flask (Whil Hentzen)**
--   April 11: Deploying a machine learning API (Devin Conathan)
--   May 9: Zendesk!
--   June 13: Python Environments (???)
--   July 11: Python Data Model (Josh Karpel)
-
-Topics
-======
-
-**Vote one topic up in the queue, or append a new one.**
-
--   lighting talks on hobby projects
--   asyncio
--   microservices
--   python syntax
--   metaclasses
--   decorators
--   C-extensions
--   numba
--   cupy
+-   June 13: Just Python Environments
+-   July 11: Lightning Talks on Hobby Projects
+-   August 8: Python Data Model (Josh Karpel)
