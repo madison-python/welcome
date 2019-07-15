@@ -1,4 +1,6 @@
 *cache/
 *files/
+*.log
+*.tex
 !README_files/
 .Rproj.user

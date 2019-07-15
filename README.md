@@ -10,10 +10,6 @@ Organizers
 Hakizimana.](README_files/figure-markdown_strict/organizers-1.png)
 
 Sponsor
-=======
-
-![](README_files/figure-markdown_strict/elastic-1.png)
-
 Code of conduct
 ===============
 
