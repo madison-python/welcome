@@ -6,10 +6,16 @@ Welcome to Madpy!
 Organizers
 ==========
 
-![Pierce Edmiston, Dan Imhoff, and William
-Hakizimana.](README_files/figure-markdown_strict/organizers-1.png)
+<img src="README_files/figure-markdown_strict/organizers-1.png" alt="Pierce Edmiston, Dan Imhoff, Willy Hakizimana, and James Bourbeau." height="80%" />
+<p class="caption">
+Pierce Edmiston, Dan Imhoff, Willy Hakizimana, and James Bourbeau.
+</p>
 
 Sponsor
+=======
+
+![](README_files/figure-markdown_strict/sponsor-1.png)
+
 Code of conduct
 ===============
 
@@ -46,6 +52,21 @@ Madpy meetings
 Madpy calendar
 ==============
 
--   June 13: Just Python Environments
--   July 11: Lightning Talks on Hobby Projects
 -   August 8: Python Data Model (Josh Karpel)
+-   *September 5:* Numba (James Bourbeau)
+-   October 10: Hackathon - Kaggle Competition
+
+Warm up
+=======
+
+    def extract_txt(zip_filename, dst_dir):
+        """Extract all txt files from a zip."""
+        with zipfile.ZipFile(zip_filename) as zip_src:
+            names = [
+                name for name in zip_src.namelist()
+                if pathlib.Path(name).suffix == ".txt"
+            ]
+            for member in names:
+                dst_path = pathlib.Path(dst_dir) / pathlib.Path(member).name
+                with zip_src.open(member) as src, open(dst_path, "wb") as dst:
+                    shutil.copyfileobj(src, dst)
