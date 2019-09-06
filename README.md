@@ -79,7 +79,7 @@ Madpy calendar
 ==============
 
 -   August 8: Python Data Model (Josh Karpel)
--   *September 5:* Numba (James Bourbeau)
+-   September 12: Numba (James Bourbeau)
 -   October 10: Hackathon - Kaggle Competition
 
 Fluent Python
