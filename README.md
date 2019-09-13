@@ -1,23 +1,3 @@
-Warm up
-=======
-
-    import pathlib
-    import shutil
-    import zipfile
-
-
-    def extract_txt(zip_filename, dst_dir):
-        """Extract all txt files from a zip."""
-        with zipfile.ZipFile(zip_filename) as zip_src:
-            names = [
-                name for name in zip_src.namelist()
-                if pathlib.Path(name).suffix == ".txt"
-            ]
-            for member in names:
-                dst_path = pathlib.Path(dst_dir) / pathlib.Path(member).name
-                with zip_src.open(member) as src, open(dst_path, "wb") as dst:
-                    shutil.copyfileobj(src, dst)
-
 Welcome to Madpy!
 =================
 
@@ -70,19 +50,9 @@ Madpy meetings
 
 ![Bread.](README_files/figure-markdown_strict/bread-1.png)
 
-Data Driven Wisconsin
-=====================
-
-![](README_files/figure-markdown_strict/data-driven-wi-1.png)
-
 Madpy calendar
 ==============
 
--   August 8: Python Data Model (Josh Karpel)
 -   September 12: Numba (James Bourbeau)
--   October 10: Hackathon - Kaggle Competition
-
-Fluent Python
-=============
-
-[madpy.s3-us-west-2.amazonaws.com/ch01-data-model.pdf](https://madpy.s3-us-west-2.amazonaws.com/ch01-data-model.pdf)
+-   October 10: David Hoese
+-   November 14: Hackathon - Kaggle Competition
