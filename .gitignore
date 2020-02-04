@@ -4,3 +4,4 @@
 *.tex
 !README_files/
 .Rproj.user
+.ipynb_checkpoints/
