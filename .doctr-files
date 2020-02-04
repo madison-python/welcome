@@ -12,6 +12,7 @@
 ./bin/expand-frame-around-image
 ./environment.yml
 ./github_deploy_key_madison_python_welcome.enc
+./img/8th-light-logo.png
 ./img/bread.png
 ./img/dan.jpg
 ./img/dask-gray-resized.png
