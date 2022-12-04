@@ -1,0 +1,37 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches:
+      - '*'         # matches every branch that doesn't contain a '/'
+      - '*/*'       # matches every branch containing a single '/'
+      - '**'        # matches every branch
+      - '!gh-pages' # excludes gh-pages
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Jupyter convert
+        run: |
+            ls -l
+            pwd
+            sudo apt update
+            sudo apt install python3-venv pipx
+            pipx ensurepath
+            pipx install nbconvert
+            jupyter nbconvert welcome.ipynb --to slides
+            mv welcome.slides.html index.html
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/source' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages

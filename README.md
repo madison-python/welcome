@@ -1,38 +1,36 @@
-Welcome to Madpy!
+Welcome to MadPy!
 =================
 
-![The Madpy Magpy.](img/madpy-logo.png)
+![The MadPy Magpy.](img/madpy-logo.png)
 
 Organizers
 ==========
 
-<img src="README_files/figure-markdown_strict/organizers-1.png" alt="Pierce Edmiston, Dan Imhoff, Willy Hakizimana, and James Bourbeau." height="80%" />
-<p class="caption">
-Pierce Edmiston, Dan Imhoff, Willy Hakizimana, and James Bourbeau.
-</p>
+<table style="border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
+  <tr>
+    <td><img src="img/edrogers.jpg" alt="Ed Rogers" height="200px" /></td>
+    <td><img src="img/djhoese.jpg" alt="David Hoese" height="200px" /></td>
+  </tr><tr>
+    <td><p class="caption">Ed Rogers</p></td>
+    <td><p class="caption">David Hoese</p></td>
+  </tr>
+</table>
+
 
 Sponsor
 =======
 
-![](README_files/figure-markdown_strict/sponsor-1.png)
+![Problem Solvers Guild](img/problem_solvers_guild.png)
 
-Code of conduct
-===============
-
-**Madpy is a community group** and open to all experience levels.  
-We are committed to **a safe, professional environment.**  
-**Questions and comments** supporting the speaker are encouraged.  
-**Interruptions and criticisms** of the speaker are not.
-
-[github.com/madison-python/code-of-conduct](https://github.com/madison-python/code-of-conduct)
-
-Want more Madpy?
+Want more MadPy?
 ================
 
 [**madpy.com**](https://madpy.com)  
 [meetup.com/madpython](https://www.meetup.com/madpython/)  
 [github.com/madison-python](https://github.com/madison-python)  
-[github.com/madison-python/welcome](https://github.com/madison-python/welcome)
+[github.com/madison-python/welcome](https://github.com/madison-python/welcome)  
+[twitter.com/madisonpython](https://twitter.com/madisonpython)  
+[fosstodon.org/@madpy](https://fosstodon.org/@madpy)  
 
 Join us on Slack
 ----------------
@@ -40,19 +38,15 @@ Join us on Slack
 `slack.madpy.com` to sign up.  
 `madpy.slack.com` to sign in.
 
-Subscribe to our googlegroups
------------------------------
-
-Send a blank email to: `madpy+subscribe@googlegroups.com`
-
-Madpy meetings
+MadPy Meetings
 ==============
 
-![Bread.](README_files/figure-markdown_strict/bread-1.png)
+If you have you have an idea for a talk you'd like to give, please reach out to Ed or Dave
 
-Madpy calendar
+MadPy Calendar
 ==============
 
--   September 12: Numba (James Bourbeau)
--   October 10: David Hoese
--   November 14: Hackathon - Kaggle Competition
+**2nd Thursdays of the Month**
+-   January 12th: Lightning Talks? Sign up at [madpy.com](madpy.com)
+-   February 9th: ???
+-   March 9th: ???
