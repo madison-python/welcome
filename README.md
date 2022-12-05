@@ -8,8 +8,8 @@ Organizers
 
 <table style="border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
   <tr>
-    <td><img src="img/edrogers.jpg" alt="Ed Rogers" height="200px" /></td>
-    <td><img src="img/djhoese.jpg" alt="David Hoese" height="200px" /></td>
+    <td><img src="img/edrogers.jpg" alt="Ed Rogers" width="200px" /></td>
+    <td><img src="img/djhoese.jpg" alt="David Hoese" width="200px" /></td>
   </tr><tr>
     <td><p class="caption">Ed Rogers</p></td>
     <td><p class="caption">David Hoese</p></td>
