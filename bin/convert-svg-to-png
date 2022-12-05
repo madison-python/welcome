@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# Install `svgexport` with npm: `npm install svgexport -g`
-# $ convert-svg-to-png input.svg output.png 600:600
-svgexport $1 $2 $3
