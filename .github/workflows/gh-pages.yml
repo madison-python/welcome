@@ -25,7 +25,7 @@ jobs:
             sudo apt install python3-venv pipx
             pipx ensurepath
             pipx install nbconvert
-            jupyter nbconvert welcome.ipynb --to slides
+            jupyter-nbconvert welcome.ipynb --to slides
             mv welcome.slides.html index.html
 
       - name: Deploy
