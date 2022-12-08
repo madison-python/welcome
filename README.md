@@ -1,3 +1,10 @@
+<!-- [[[cog
+import cog
+import nbconvert
+
+(body, resources) = nbconvert.MarkdownExporter().from_filename("welcome.ipynb")
+cog.out(f"\n{body}\n")
+]]] -->
 Welcome to MadPy!
 =================
 
@@ -50,3 +57,4 @@ MadPy Calendar
 -   January 12th: Lightning Talks? Sign up at [madpy.com](madpy.com)
 -   February 9th: ???
 -   March 9th: ???
+<!-- [[[end]]] -->
