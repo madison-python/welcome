@@ -2,11 +2,8 @@ name: Publish to GitHub Pages
 
 on:
   push:
-    branches:
-      - '*'         # matches every branch that doesn't contain a '/'
-      - '*/*'       # matches every branch containing a single '/'
-      - '**'        # matches every branch
-      - '!gh-pages' # excludes gh-pages
+    branches-ignore:
+      - 'gh-pages' # excludes gh-pages
 
 jobs:
   publish:
