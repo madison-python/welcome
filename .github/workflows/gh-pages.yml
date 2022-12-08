@@ -22,8 +22,10 @@ jobs:
             sudo apt install python3-venv pipx
             pipx ensurepath
             pipx install nbconvert
+            pipx install cogapp
             jupyter-nbconvert welcome.ipynb --to slides
             mv welcome.slides.html index.html
+            cog --check README.md
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
