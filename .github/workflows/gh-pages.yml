@@ -16,13 +16,9 @@ jobs:
 
       - name: Jupyter convert
         run: |
-            ls -l
-            pwd
             sudo apt update
-            sudo apt install python3-venv pipx
-            pipx ensurepath
-            pipx install nbconvert
-            pipx install cogapp
+            sudo apt install python3-pip
+            pip install nbconvert cogapp
             jupyter-nbconvert welcome.ipynb --to slides
             mv welcome.slides.html index.html
             cog --check README.md

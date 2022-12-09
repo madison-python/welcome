@@ -1,18 +1,19 @@
 <!-- [[[cog
 import cog
-import nbconvert
+from nbconvert.exporters import MarkdownExporter
+from nbconvert.preprocessors import RegexRemovePreprocessor
 
-(body, resources) = nbconvert.MarkdownExporter().from_filename("welcome.ipynb")
+rrp = RegexRemovePreprocessor()
+rrp.patterns = (r"<style>",)
+e = MarkdownExporter()
+e.register_preprocessor(rrp, enabled=True)
+(body, resources) = e.from_filename("welcome.ipynb")
 cog.out(f"\n{body}\n")
 ]]] -->
 
 <h1><center>Welcome to MadPy!</center></h1>
 <br>
 <center><img src="img/madpy-logo.png" alt="The MadPy Magpie" width="35%"/></center>
-
-<style>
-table,td,tr,th {border:none!important}
-</style>
 
 # Organizers
 
@@ -25,7 +26,6 @@ table,td,tr,th {border:none!important}
     <td><p class="caption">David Hoese</p></td>
   </tr>
 </table>
-
 
 # Sponsor
 
