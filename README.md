@@ -29,7 +29,9 @@ cog.out(f"\n{body}\n")
 
 # Sponsor
 
-<img src="img/problem_solvers_guild.png" alt="Sponsor Logo: Problem Solvers Guild" height="200px"/>
+<center>
+<img src="img/8L_Logo_Primary_Black.png" alt="Sponsor Logo: 8th Light" width="500px"/>
+</center>
 
 # Want more MadPy?
 
@@ -54,9 +56,9 @@ cog.out(f"\n{body}\n")
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
--   January 12th: Lightning Talks. Sign up at [madpy.com](https://madpy.com)
--   February 9th: Hack Night?
--   March 9th: ???
+- February 9th: Serving ML Models at Scale with FastAPI
+- March 9th: ???
+- April 13th: ???
 
 Open to sponsorship
 
