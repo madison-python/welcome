@@ -30,7 +30,7 @@ cog.out(f"\n{body}\n")
 # Sponsor
 
 <center>
-<img src="img/8L_Logo_Primary_Black.png" alt="Sponsor Logo: 8th Light" width="500px"/>
+<img src="img/pytroll_light_big.png" alt="Sponsor Logo: Pytroll" width="500px"/>
 </center>
 
 # Want more MadPy?
@@ -56,9 +56,9 @@ cog.out(f"\n{body}\n")
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
-- February 9th: Serving ML Models at Scale with FastAPI
-- March 9th: ???
+- March 9th: Clean Code
 - April 13th: ???
+- May 11th: ???
 
 Open to sponsorship
 
