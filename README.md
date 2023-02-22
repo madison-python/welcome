@@ -56,9 +56,9 @@ cog.out(f"\n{body}\n")
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
-- March 9th: Clean Code
-- April 13th: ???
+- April 13th: Serving ML Models at Scale with FastAPI
 - May 11th: ???
+- June 8th: ???
 
 Open to sponsorship
 
