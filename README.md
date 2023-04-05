@@ -30,7 +30,7 @@ cog.out(f"\n{body}\n")
 # Sponsor
 
 <center>
-<img src="img/pytroll_light_big.png" alt="Sponsor Logo: Pytroll" width="500px"/>
+<img src="img/verve-logo.png" alt="Sponsor Logo: Verve Industrial" width="500px"/>
 </center>
 
 # Want more MadPy?
@@ -56,9 +56,9 @@ cog.out(f"\n{body}\n")
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
-- April 13th: Serving ML Models at Scale with FastAPI
-- May 11th: ???
-- June 8th: ???
+- May 11th: For Your Eyes Only: An Introduction to Cryptography with Python
+- June 8th: Intermediate Research Software Development in Python
+- July 13th: ???
 
 Open to sponsorship
 
