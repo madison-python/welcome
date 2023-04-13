@@ -57,7 +57,7 @@ cog.out(f"\n{body}\n")
 
 **2nd Thursdays of the Month**
 - May 11th: For Your Eyes Only: An Introduction to Cryptography with Python
-- June 8th: Intermediate Research Software Development in Python
+- June 8th: Workshop: Interactive Plots Using Plotly and Streamlit
 - July 13th: ???
 
 Open to sponsorship
