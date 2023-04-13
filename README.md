@@ -51,7 +51,7 @@ cog.out(f"\n{body}\n")
 
 # MadPy Meetings
 
-### If you have you have an idea for a talk you'd like to give, please reach out to Ed or Dave
+### If you have an idea for a talk you'd like to give, please reach out to Ed or Dave
 
 # MadPy Calendar
 
