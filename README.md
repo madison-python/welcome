@@ -30,7 +30,7 @@ cog.out(f"\n{body}\n")
 # Sponsor
 
 <center>
-<img src="img/verve-logo.png" alt="Sponsor Logo: Verve Industrial" width="500px"/>
+<img src="img/bluecat-logo.png" alt="Sponsor Logo: BlueCat Networks" width="500px"/>
 </center>
 
 # Want more MadPy?
@@ -56,9 +56,9 @@ cog.out(f"\n{body}\n")
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
-- May 11th: For Your Eyes Only: An Introduction to Cryptography with Python
 - June 8th: Workshop: Interactive Plots Using Plotly and Streamlit
-- July 13th: ???
+- July 13th: Dashboards with Live Updates for Real-Time Analytics
+- August 10th: ???
 
 Open to sponsorship
 
