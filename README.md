@@ -57,8 +57,8 @@ cog.out(f"\n{body}\n")
 
 **2nd Thursdays of the Month**
 - June 8th: Workshop: Interactive Plots Using Plotly and Streamlit
-- July 13th: Dashboards with Live Updates for Real-Time Analytics
-- August 10th: ???
+- July 13th: ???
+- August 10th: Dashboards with Live Updates for Real-Time Analytics
 
 Open to sponsorship
 
