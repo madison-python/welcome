@@ -27,12 +27,6 @@ cog.out(f"\n{body}\n")
   </tr>
 </table>
 
-# Sponsor
-
-<center>
-<img src="img/bluecat-logo.png" alt="Sponsor Logo: BlueCat Networks" width="500px"/>
-</center>
-
 # Want more MadPy?
 
 [**madpy.com**](https://madpy.com)  
@@ -56,9 +50,9 @@ cog.out(f"\n{body}\n")
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
-- June 8th: Workshop: Interactive Plots Using Plotly and Streamlit
-- July 13th: ???
+- July 13th: Lightning Talks
 - August 10th: Dashboards with Live Updates for Real-Time Analytics
+- September ??: TBD -- possibly on a different date
 
 Open to sponsorship
 
