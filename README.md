@@ -27,6 +27,12 @@ cog.out(f"\n{body}\n")
   </tr>
 </table>
 
+# Sponsor
+
+<center>
+<img src="img/workday-logo.png" alt="Sponsor Logo: Workday" width="500px"/>
+</center>
+
 # Want more MadPy?
 
 [**madpy.com**](https://madpy.com)  
@@ -50,9 +56,9 @@ cog.out(f"\n{body}\n")
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
-- July 13th: Lightning Talks
 - August 10th: Dashboards with Live Updates for Real-Time Analytics
 - September ??: TBD -- possibly on a different date
+- October 12th: ???
 
 Open to sponsorship
 
