@@ -39,7 +39,6 @@ cog.out(f"\n{body}\n")
 [meetup.com/madpython](https://www.meetup.com/madpython/)  
 [github.com/madison-python](https://github.com/madison-python)  
 [github.com/madison-python/welcome](https://github.com/madison-python/welcome)  
-[twitter.com/madisonpython](https://twitter.com/madisonpython)  
 [fosstodon.org/@madpy](https://fosstodon.org/@madpy)  
 
 ### Join us on Slack
