@@ -30,7 +30,7 @@ cog.out(f"\n{body}\n")
 # Sponsor
 
 <center>
-<img src="img/workday-logo.png" alt="Sponsor Logo: Workday" width="500px"/>
+<img src="img/memphis-dev-logo.png" alt="Sponsor Logo: Memphis.dev" width="500px"/>
 </center>
 
 # Want more MadPy?
@@ -55,9 +55,9 @@ cog.out(f"\n{body}\n")
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
-- August 10th: Dashboards with Live Updates for Real-Time Analytics
-- September ??: TBD -- possibly on a different date
-- October 12th: ???
+- September 14th: Snakes & Dogs: Madison Python meets at the Great Dane Hilldale
+- October 5th: Joint Meetup -- MadPy + WiT (Women in Tech)
+- November 9th: ???
 
 Open to sponsorship
 
