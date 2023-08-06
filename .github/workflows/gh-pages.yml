@@ -18,7 +18,7 @@ jobs:
         run: |
             sudo apt update
             sudo apt install python3-pip
-            pip install nbconvert cogapp
+            pip install "nbconvert<7.7.0" cogapp  # Pinned until https://github.com/jupyter/nbconvert/issues/2030 is resolved
             jupyter-nbconvert welcome.ipynb --to slides
             mv welcome.slides.html index.html
             cog --check README.md
