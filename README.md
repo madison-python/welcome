@@ -27,12 +27,6 @@ cog.out(f"\n{body}\n")
   </tr>
 </table>
 
-# Sponsor
-
-<center>
-<img src="img/memphis-dev-logo.png" alt="Sponsor Logo: Memphis.dev" width="500px"/>
-</center>
-
 # Want more MadPy?
 
 [**madpy.com**](https://madpy.com)  
@@ -56,7 +50,7 @@ cog.out(f"\n{body}\n")
 
 **2nd Thursdays of the Month**
 - September 14th: Snakes & Dogs: Madison Python meets at the Great Dane Hilldale
-- October 5th: Joint Meetup -- MadPy + WiT (Women in Tech)
+- October 12th: Joint Meetup -- MadPy + WiT (Women in Tech)
 - November 9th: ???
 
 Open to sponsorship
