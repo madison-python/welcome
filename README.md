@@ -27,20 +27,17 @@ cog.out(f"\n{body}\n")
   </tr>
 </table>
 
+# Sponsor
+
+<img src="img/problem_solvers_guild.png" alt="Sponsor Logo: Problem Solvers Guild" height="200px"/>
+
 # Want more MadPy?
 
 [**madpy.com**](https://madpy.com)  
-[meetup.com/madpython](https://www.meetup.com/madpython/)  
-[github.com/madison-python](https://github.com/madison-python)  
-[github.com/madison-python/welcome](https://github.com/madison-python/welcome)  
-[fosstodon.org/@madpy](https://fosstodon.org/@madpy)  
-
-### Join us on Slack
-
-[slack.madpy.com](https://slack.madpy.com) to sign up.  
-[madpy.slack.com](https://madpy.slack.com) to sign in.
-
-
+<img src="https://www.meetup.com/favicon.ico" alt="Meetup" style="width: 15px;" /> [meetup.com/madpython](https://www.meetup.com/madpython/)  
+<img src="https://www.github.com/favicon.ico" alt="GitHub" style="width: 15px;" /> [github.com/madison-python](https://github.com/madison-python)  
+<img src="https://fosstodon.org/favicon.ico" alt="Mastodon" style="width: 15px;" /> [fosstodon.org/@madpy](https://fosstodon.org/@madpy)  
+<img src="https://www.slack.com/favicon.ico" alt="Slack" style="width: 15px;" /> [slack.madpy.com](https://slack.madpy.com)
 
 # MadPy Meetings
 
@@ -49,9 +46,9 @@ cog.out(f"\n{body}\n")
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
-- September 14th: Snakes & Dogs: Madison Python meets at the Great Dane Hilldale
-- October 12th: Joint Meetup -- MadPy + WiT (Women in Tech)
-- November 9th: ???
+- December 14th: Can Python Help with Calculating Invariants of Elliptic Curves? <br /><img src="https://madpy.com/static/images/2023-12-14-calculating-invariants-of-elliptic-curves-social-card.png" alt="Can Python Help with Calculating Invariants of Elliptic Curves?" style="width: 250px;" />
+- January 11th: Python at the speed of C: Cython and Static Compilation
+- February 8th: ???
 
 Open to sponsorship
 
