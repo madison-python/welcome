@@ -33,11 +33,25 @@ cog.out(f"\n{body}\n")
 
 # Want more MadPy?
 
-[**madpy.com**](https://madpy.com)  
-<img src="https://www.meetup.com/favicon.ico" alt="Meetup" style="width: 15px;" /> [meetup.com/madpython](https://www.meetup.com/madpython/)  
-<img src="https://www.github.com/favicon.ico" alt="GitHub" style="width: 15px;" /> [github.com/madison-python](https://github.com/madison-python)  
-<img src="https://fosstodon.org/favicon.ico" alt="Mastodon" style="width: 15px;" /> [fosstodon.org/@madpy](https://fosstodon.org/@madpy)  
-<img src="https://www.slack.com/favicon.ico" alt="Slack" style="width: 15px;" /> [slack.madpy.com](https://slack.madpy.com)
+
+<table style="border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
+  <tr style="background-color: transparent; border: none;">
+    <td style="border: none;"><img src="img/madpy-logo.png" alt="MadPy" style="width: 45px;" /></td><td style="vertical-align: middle; border: none;"><b><a href="https://madpy.com">madpy.com</a></b></td>
+  </tr>
+  <tr style="background-color: transparent; border: none;">
+    <td style="border: none;"><img src="https://www.meetup.com/favicon.ico" alt="Meetup" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://www.meetup.com/madpython/">meetup.com/madpython</a></td>
+  </tr>
+  <tr style="background-color: transparent; border: none;">
+    <td style="border: none;"><img src="https://www.github.com/favicon.ico" alt="GitHub" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://github.com/madison-python">github.com/madison-python</a></td>
+  </tr>
+  <tr style="background-color: transparent; border: none;">
+    <td style="border: none;"><img src="https://fosstodon.org/favicon.ico" alt="Mastodon" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://fosstodon.org/@madpy">fosstodon.org/@madpy</a></td>
+  </tr>
+  <tr style="background-color: transparent; border: none;">
+    <td style="border: none;"><img src="https://www.slack.com/favicon.ico" alt="Slack" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://slack.madpy.com">slack.madpy.com</a></td>
+  </tr>
+</table>
+
 
 # MadPy Meetings
 
