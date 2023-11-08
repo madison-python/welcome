@@ -15,6 +15,22 @@ cog.out(f"\n{body}\n")
 <br>
 <center><img src="img/madpy-logo.png" alt="The MadPy Magpie" width="35%"/></center>
 
+# Code of Conduct
+
+**Madpy is a community group** and open to all experience levels. We are committed to **a safe, professional environment**
+
+If you aren't sure if a behavior is acceptable, ask yourself:
+
+> Does this build up and encourage someone?
+> 
+> Is this appropriate in a professional setting?
+> 
+
+Learn more about the MadPy Code of Conduct:
+
+https://github.com/madison-python/code-of-conduct
+
+
 # Organizers
 
 <table style="border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
@@ -29,7 +45,7 @@ cog.out(f"\n{body}\n")
 
 # Sponsor
 
-<img src="img/problem_solvers_guild.png" alt="Sponsor Logo: Problem Solvers Guild" height="200px"/>
+<center><img src="img/problem_solvers_guild.png" alt="Sponsor Logo: Problem Solvers Guild" height="200px"/></center>
 
 # Want more MadPy?
 
