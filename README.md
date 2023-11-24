@@ -15,9 +15,21 @@ cog.out(f"\n{body}\n")
 <br>
 <center><img src="img/madpy-logo.png" alt="The MadPy Magpie" width="35%"/></center>
 
+# Organizers
+
+<table style="border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
+  <tr>
+    <td><img src="img/edrogers.jpg" alt="Ed Rogers" style="width: 300px;" /></td>
+    <td><img src="img/djhoese.jpg" alt="David Hoese" style="width: 300px;" /></td>
+  </tr><tr>
+    <td><p class="caption">Ed Rogers</p></td>
+    <td><p class="caption">David Hoese</p></td>
+  </tr>
+</table>
+
 # Code of Conduct
 
-**Madpy is a community group** and open to all experience levels. We are committed to **a safe, professional environment**
+**MadPy is a community group** and open to all experience levels. We are committed to **a safe, professional environment**
 
 If you aren't sure if a behavior is acceptable, ask yourself:
 
@@ -30,18 +42,6 @@ Learn more about the MadPy Code of Conduct:
 
 https://github.com/madison-python/code-of-conduct
 
-
-# Organizers
-
-<table style="border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
-  <tr>
-    <td><img src="img/edrogers.jpg" alt="Ed Rogers" style="width: 300px;" /></td>
-    <td><img src="img/djhoese.jpg" alt="David Hoese" style="width: 300px;" /></td>
-  </tr><tr>
-    <td><p class="caption">Ed Rogers</p></td>
-    <td><p class="caption">David Hoese</p></td>
-  </tr>
-</table>
 
 # Sponsor
 
@@ -68,6 +68,10 @@ https://github.com/madison-python/code-of-conduct
   </tr>
 </table>
 
+
+## What You're Missing
+
+<center><img src="img/slack_what_youre_missing.png" alt="Screenshot of Slack workspace with multiple ongoing conversations"/></center>
 
 # MadPy Meetings
 
