@@ -45,7 +45,7 @@ https://github.com/madison-python/code-of-conduct
 
 # Sponsor
 
-<center><img src="img/problem_solvers_guild.png" alt="Sponsor Logo: Problem Solvers Guild" height="200px"/></center>
+<center><img src="img/apartmentiq_logo.png" alt="Sponsor Logo: ApartmentIQ" height="200px"/></center>
 
 # Want more MadPy?
 
@@ -80,9 +80,9 @@ https://github.com/madison-python/code-of-conduct
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
-- December 14th: Can Python Help with Calculating Invariants of Elliptic Curves? <br /><img src="https://madpy.com/static/images/2023-12-14-calculating-invariants-of-elliptic-curves-social-card.png" alt="Can Python Help with Calculating Invariants of Elliptic Curves?" style="width: 250px;" />
-- January 11th: Python at the speed of C: Cython and Static Compilation
+- January 11th: Python at the speed of C: Cython and Static Compilation <br /><img src="https://madpy.com/static/images/2024-01-11-python-at-the-speed-of-c-social-card-crop.png" alt="Python at the Speed of C: Cython and Static Compilation" style="width: 250px;" />
 - February 8th: ???
+- March 14th: ???
 
 Open to sponsorship
 
