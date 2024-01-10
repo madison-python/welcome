@@ -31,12 +31,11 @@ cog.out(f"\n{body}\n")
 
 **MadPy is a community group** and open to all experience levels. We are committed to **a safe, professional environment**
 
-If you aren't sure if a behavior is acceptable, ask yourself:
+### Ask Yourself
 
-> Does this build up and encourage someone?
-> 
-> Is this appropriate in a professional setting?
-> 
+> Does my behavior encourage newcomers to return to future MadPy events?
+>
+> Would someone who has never given a presentation at MadPy before be more likely to do so in the future?
 
 Learn more about the MadPy Code of Conduct:
 
@@ -45,7 +44,7 @@ https://github.com/madison-python/code-of-conduct
 
 # Sponsor
 
-<center><img src="img/apartmentiq_logo.png" alt="Sponsor Logo: ApartmentIQ" height="200px"/></center>
+<center><img src="img/8L_Logo_Primary_Black.png" alt="Sponsor Logo: 8th Light" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -69,21 +68,40 @@ https://github.com/madison-python/code-of-conduct
 </table>
 
 
-## What You're Missing
-
-<center><img src="img/slack_what_youre_missing.png" alt="Screenshot of Slack workspace with multiple ongoing conversations"/></center>
-
 # MadPy Meetings
 
 ### If you have an idea for a talk you'd like to give, please reach out to Ed or Dave
 
+# Madison Voter Life Hack
+
+Request your absentee ballot
+
+<img src="img/myvote-qr-code.png" alt="QR Code version of MyVote WI link" style="width: auto; height: 100%;"/>
+
+[https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail](https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail)
+
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
-- January 11th: Python at the speed of C: Cython and Static Compilation <br /><img src="https://madpy.com/static/images/2024-01-11-python-at-the-speed-of-c-social-card-crop.png" alt="Python at the Speed of C: Cython and Static Compilation" style="width: 250px;" />
-- February 8th: ???
-- March 14th: ???
+<table style="width: 100%; table-layout: fixed;">
+    <tr>
+        <td style="width: 33%; text-align: center;">
+            <img src="https://madpy.com/static/images/2024-02-08-gpu-programming-in-python-social-card.png" alt="GPU Programming in Python" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%; text-align: center;">
+            <img src="img/Unknown-Social-Card.png" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%; text-align: center;">
+            <img src="img/Unknown-Social-Card.png" style="width: 100%; height: auto;">
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">February 8th</td>
+        <td style="text-align: center;">March 14th</td>
+        <td style="text-align: center;">April 11th</td>
+    </tr>
+</table>
 
-Open to sponsorship
+Open to sponsorship for future meetings
 
 <!-- [[[end]]] -->
