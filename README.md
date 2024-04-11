@@ -67,6 +67,9 @@ https://github.com/madison-python/code-of-conduct
   <tr style="background-color: transparent; border: none;">
     <td style="border: none;"><img src="https://www.slack.com/favicon.ico" alt="Slack" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://slack.madpy.com">slack.madpy.com</a></td>
   </tr>
+  <tr style="background-color: transparent; border: none;">
+    <td style="border: none;"><img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://linkedin.com/company/madpy">linkedin.com/company/madpy</a></td>
+  </tr>
 </table>
 
 
@@ -74,25 +77,34 @@ https://github.com/madison-python/code-of-conduct
 
 ### If you have an idea for a talk you'd like to give, please reach out to Ed, Dave, or Josh
 
+# Madison Voter Life Hack
+
+<center>
+    Request your absentee ballot<br /><br />
+    <img src="img/myvote-qr-code.png" alt="QR Code version of MyVote WI link" style="width: auto; height: 200px;"/><img src="https://myvote.wi.gov/Portals/0/Images/MyVote.png" alt="MyVote WI Logo" style="width: auto; height: 200px;"/><br />
+    <br />
+    <a href="https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail">https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail</a>
+</center>
+
 # MadPy Calendar
 
 **2nd Thursdays of the Month**
 <table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
     <tr>
         <td style="width: 33%; text-align: center;">
-            <img src="img/2024-04-11-gpu-programming-in-python-social-card-crop.png" alt="GPU Programming in Python" style="width: 100%; height: auto;">
-        </td>
-        <td style="width: 33%; text-align: center;">
             <img src="https://madpy.com/static/images/2024-05-09-Mastering-Pythonic-Data-Validation-and-Transformation-with-Pydantic-social-card-2.png" alt="Mastering Data Validation With Pydantic" style="width: 100%; height: auto;">
         </td>
         <td style="width: 33%; text-align: center;">
             <img src="img/2024-06-13-Concurrency-and-Parallelism-social-card-crop.png" alt="Concurrency and Parallelism" style="width: 100%; height: auto;">
         </td>
+        <td style="width: 33%; text-align: center;">
+            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
+        </td>
     </tr>
     <tr>
-        <td style="text-align: center;">April 11th</td>
         <td style="text-align: center;">May 9th</td>
         <td style="text-align: center;">June 13th</td>
+        <td style="text-align: center;">July 11th</td>
     </tr>
 </table>
 
