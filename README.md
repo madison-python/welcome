@@ -46,7 +46,7 @@ https://github.com/madison-python/code-of-conduct
 
 # Sponsor
 
-<center><img src="img/Fetch_Rewards_Logo.jpg" alt="Sponsor Logo: Fetch Rewards" width="500px"/></center>
+<center><img src="img/verve-logo.png" alt="Sponsor Logo: Verve Industrial" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -92,19 +92,19 @@ https://github.com/madison-python/code-of-conduct
 <table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
     <tr>
         <td style="width: 33%; text-align: center;">
-            <img src="https://madpy.com/static/images/2024-05-09-Mastering-Pythonic-Data-Validation-and-Transformation-with-Pydantic-social-card-2.png" alt="Mastering Data Validation With Pydantic" style="width: 100%; height: auto;">
+            <img src="img/2024-06-13-Concurrency-and-Parallelism-social-card-crop.png" alt="Concurrency and Parallelism" style="width: 100%; height: auto;">
         </td>
         <td style="width: 33%; text-align: center;">
-            <img src="img/2024-06-13-Concurrency-and-Parallelism-social-card-crop.png" alt="Concurrency and Parallelism" style="width: 100%; height: auto;">
+            <img src="https://madpy.com/static/images/2023-09-14-madpy-social-great-dane-hilldale-card-1200x630.png" alt="MadPy Social" style="width: 100%; height: auto;">
         </td>
         <td style="width: 33%; text-align: center;">
             <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
         </td>
     </tr>
     <tr>
-        <td style="text-align: center;">May 9th</td>
         <td style="text-align: center;">June 13th</td>
         <td style="text-align: center;">July 11th</td>
+        <td style="text-align: center;">August 8th</td>
     </tr>
 </table>
 
