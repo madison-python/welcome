@@ -110,4 +110,16 @@ https://github.com/madison-python/code-of-conduct
 
 Open to sponsorship for future meetings
 
+<table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
+    <tr>
+        <td style="width: 50%; text-align: center;">
+            <img src="img/pydantic-repo-commits.png" alt="Bar chart of commits to Pydantic in 2024" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 50%; text-align: center;">
+            <img src="img/pydantic-core-repo-commits.png" alt="Bar chart of commits to Pydantic in 2024" style="width: 100%; height: auto;">
+        </td>
+    </tr>
+</table>
+
+
 <!-- [[[end]]] -->
