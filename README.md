@@ -46,7 +46,7 @@ https://github.com/madison-python/code-of-conduct
 
 # Sponsor
 
-<center><img src="img/verve-logo.png" alt="Sponsor Logo: Verve Industrial" width="500px"/></center>
+<center><img src="img/clearviewai-logo.png" alt="Sponsor Logo: Clearview AI" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -73,9 +73,43 @@ https://github.com/madison-python/code-of-conduct
 </table>
 
 
-# MadPy Meetings
+# Participate!
 
-### If you have an idea for a talk you'd like to give, please reach out to Ed, Dave, or Josh
+### Give a talk
+
+### Join our bi-weekly bookclub
+
+### Update our website
+
+### Write Python puzzles for us
+
+### Expand our social media presence
+
+### Find our next sponsor
+
+# MadPy Calendar
+
+**2nd Thursdays of the Month**
+<table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
+    <tr>
+        <td style="width: 33%; text-align: center;">
+            <img src="https://madpy.com/static/images/2023-09-14-madpy-social-great-dane-hilldale-card.png" alt="MadPy Social" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%; text-align: center;">
+            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%; text-align: center;">
+            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">July 11th</td>
+        <td style="text-align: center;">August 8th</td>
+        <td style="text-align: center;">September 12th</td>
+    </tr>
+</table>
+
+Open to sponsorship for future meetings
 
 # Madison Voter Life Hack
 
@@ -85,41 +119,5 @@ https://github.com/madison-python/code-of-conduct
     <br />
     <a href="https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail">https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail</a>
 </center>
-
-# MadPy Calendar
-
-**2nd Thursdays of the Month**
-<table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
-    <tr>
-        <td style="width: 33%; text-align: center;">
-            <img src="img/2024-06-13-Concurrency-and-Parallelism-social-card-crop.png" alt="Concurrency and Parallelism" style="width: 100%; height: auto;">
-        </td>
-        <td style="width: 33%; text-align: center;">
-            <img src="https://madpy.com/static/images/2023-09-14-madpy-social-great-dane-hilldale-card-1200x630.png" alt="MadPy Social" style="width: 100%; height: auto;">
-        </td>
-        <td style="width: 33%; text-align: center;">
-            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align: center;">June 13th</td>
-        <td style="text-align: center;">July 11th</td>
-        <td style="text-align: center;">August 8th</td>
-    </tr>
-</table>
-
-Open to sponsorship for future meetings
-
-<table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
-    <tr>
-        <td style="width: 50%; text-align: center;">
-            <img src="img/pydantic-repo-commits.png" alt="Bar chart of commits to Pydantic in 2024" style="width: 100%; height: auto;">
-        </td>
-        <td style="width: 50%; text-align: center;">
-            <img src="img/pydantic-core-repo-commits.png" alt="Bar chart of commits to Pydantic in 2024" style="width: 100%; height: auto;">
-        </td>
-    </tr>
-</table>
-
 
 <!-- [[[end]]] -->
