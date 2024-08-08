@@ -46,7 +46,7 @@ https://github.com/madison-python/code-of-conduct
 
 # Sponsor
 
-<center><img src="img/clearviewai-logo.png" alt="Sponsor Logo: Clearview AI" width="500px"/></center>
+<center><img src="img/8L_Logo_Primary_Black.png" alt="Sponsor Logo: 8th Light" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -93,7 +93,7 @@ https://github.com/madison-python/code-of-conduct
 <table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
     <tr>
         <td style="width: 33%; text-align: center;">
-            <img src="https://madpy.com/static/images/2023-09-14-madpy-social-great-dane-hilldale-card.png" alt="MadPy Social" style="width: 100%; height: auto;">
+            <img src="img/2024-09-12-DevOps-for-Python.png" alt="DevOps for Python" style="width: 100%; height: auto;">
         </td>
         <td style="width: 33%; text-align: center;">
             <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
@@ -103,9 +103,9 @@ https://github.com/madison-python/code-of-conduct
         </td>
     </tr>
     <tr>
-        <td style="text-align: center;">July 11th</td>
-        <td style="text-align: center;">August 8th</td>
         <td style="text-align: center;">September 12th</td>
+        <td style="text-align: center;">October 10th</td>
+        <td style="text-align: center;">November 14th</td>
     </tr>
 </table>
 
