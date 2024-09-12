@@ -59,11 +59,10 @@ What will this print?
 ```python
 def add_x(items, x):
     items += range(x)
-    return items
 
 items = [1]
-added = add_x(items, 3)
-print(added)
+add_x(items, 3)
+print(items)
 ```
 
 ```
@@ -78,26 +77,24 @@ How about this?
 ```python
 def add_y(items, y):
     items = items + range(y)
-    return items
 
 items = [1]
-added = add_y(items, 3)
-print(added)
+add_y(items, 3)
+print(items)
 ```
 
 ```
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
-Cell In[6], line 6
-      3     return items
-      5 items = [1]
-----> 6 added = add_y(items, 3)
-      7 print(added)
+Cell In[8], line 5
+      2     items = items + range(y)
+      4 items = [1]
+----> 5 add_y(items, 3)
+      6 print(items)
 
-Cell In[6], line 2, in add_y(items, y)
+Cell In[8], line 2, in add_y(items, y)
       1 def add_y(items, y):
 ----> 2     items = items + range(y)
-      3     return items
 
 TypeError: can only concatenate list (not "range") to list
 ```
