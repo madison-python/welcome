@@ -33,20 +33,78 @@ cog.out(f"\n{body}\n")
 
 **MadPy is a community group** and open to all experience levels. We are committed to **a safe, professional environment**
 
-### Ask Yourself
+### Our Commitment to You
 
-> Does my behavior encourage newcomers to return to future MadPy events?
->
-> Would someone who has never given a presentation at MadPy before be more likely to do so in the future?
+We are enthusiastically focused on improving our event and making it a place that is welcoming to all. All reports will be taken seriously, handled respectfully, and dealt with in a timely manner.
 
 Learn more about the MadPy Code of Conduct:
 
 https://github.com/madison-python/code-of-conduct
 
 
+# Madison Voter Life Hack
+
+<center>
+    Request your absentee ballot<br /><br />
+    <img src="img/myvote-qr-code.png" alt="QR Code version of MyVote WI link" style="width: auto; height: 200px;"/><img src="https://myvote.wi.gov/Portals/0/Images/MyVote.png" alt="MyVote WI Logo" style="width: auto; height: 200px;"/><br />
+    <br />
+    <a href="https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail">https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail</a>
+</center>
+
+# Python Warm-up
+
+What will this print?
+
+
+```python
+def add_x(items, x):
+    items += range(x)
+    return items
+
+items = [1]
+added = add_x(items, 3)
+print(added)
+```
+
+```
+[1, 0, 1, 2]
+```
+
+# Python Warm-up
+
+How about this?
+
+
+```python
+def add_y(items, y):
+    items = items + range(y)
+    return items
+
+items = [1]
+added = add_y(items, 3)
+print(added)
+```
+
+```
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[6], line 6
+      3     return items
+      5 items = [1]
+----> 6 added = add_y(items, 3)
+      7 print(added)
+
+Cell In[6], line 2, in add_y(items, y)
+      1 def add_y(items, y):
+----> 2     items = items + range(y)
+      3     return items
+
+TypeError: can only concatenate list (not "range") to list
+```
+
 # Sponsor
 
-<center><img src="img/8L_Logo_Primary_Black.png" alt="Sponsor Logo: 8th Light" width="500px"/></center>
+<center><img src="img/verve-logo.png" alt="Sponsor Logo: Verve Industrial" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -73,19 +131,9 @@ https://github.com/madison-python/code-of-conduct
 </table>
 
 
-# Participate!
+# The Best Way to Help MadPy
 
-### Give a talk
-
-### Join our bi-weekly bookclub
-
-### Update our website
-
-### Write Python puzzles for us
-
-### Expand our social media presence
-
-### Find our next sponsor
+### Talk to your employer about Sponsorship!
 
 # MadPy Calendar
 
@@ -93,7 +141,7 @@ https://github.com/madison-python/code-of-conduct
 <table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
     <tr>
         <td style="width: 33%; text-align: center;">
-            <img src="img/2024-09-12-DevOps-for-Python.png" alt="DevOps for Python" style="width: 100%; height: auto;">
+            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
         </td>
         <td style="width: 33%; text-align: center;">
             <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
@@ -103,21 +151,10 @@ https://github.com/madison-python/code-of-conduct
         </td>
     </tr>
     <tr>
-        <td style="text-align: center;">September 12th</td>
         <td style="text-align: center;">October 10th</td>
         <td style="text-align: center;">November 14th</td>
+        <td style="text-align: center;">December 12th</td>
     </tr>
 </table>
-
-Open to sponsorship for future meetings
-
-# Madison Voter Life Hack
-
-<center>
-    Request your absentee ballot<br /><br />
-    <img src="img/myvote-qr-code.png" alt="QR Code version of MyVote WI link" style="width: auto; height: 200px;"/><img src="https://myvote.wi.gov/Portals/0/Images/MyVote.png" alt="MyVote WI Logo" style="width: auto; height: 200px;"/><br />
-    <br />
-    <a href="https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail">https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail</a>
-</center>
 
 <!-- [[[end]]] -->
