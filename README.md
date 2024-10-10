@@ -42,66 +42,52 @@ Learn more about the MadPy Code of Conduct:
 https://github.com/madison-python/code-of-conduct
 
 
-# Madison Voter Life Hack
+# VOTE!
 
 <center>
-    Request your absentee ballot<br /><br />
-    <img src="img/myvote-qr-code.png" alt="QR Code version of MyVote WI link" style="width: auto; height: 200px;"/><img src="https://myvote.wi.gov/Portals/0/Images/MyVote.png" alt="MyVote WI Logo" style="width: auto; height: 200px;"/><br />
-    <br />
-    <a href="https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail">https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail</a>
+    Visit <a href="https://myvote.wi.gov/">https://myvote.wi.gov/</a><br /><br />
+    <img src="https://myvote.wi.gov/Portals/0/Images/MyVote.png" alt="MyVote WI Logo" style="width: auto; height: 200px;"/><br />
 </center>
 
 # Python Warm-up
 
-What will this print?
+## What's going wrong here?
 
-
-```python
-def add_x(items, x):
-    items += range(x)
-
-items = [1]
-add_x(items, 3)
-print(items)
-```
-
-```
-[1, 0, 1, 2]
-```
+<img src="img/demo.3.12.good_dict.gif" alt="An animated terminal showing python code" />
 
 # Python Warm-up
 
-How about this?
+## How is the behavior different in Python 3.13?
 
+<img src="img/demo.3.13.good_dict.gif" alt="An animated terminal showing python code" />
 
-```python
-def add_y(items, y):
-    items = items + range(y)
+# Python Warm-up
 
-items = [1]
-add_y(items, 3)
-print(items)
-```
+## What's going wrong here?
 
-```
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-Cell In[8], line 5
-      2     items = items + range(y)
-      4 items = [1]
-----> 5 add_y(items, 3)
-      6 print(items)
+<img src="img/demo.3.12.bad_dict.gif" alt="An animated terminal showing python code" />
 
-Cell In[8], line 2, in add_y(items, y)
-      1 def add_y(items, y):
-----> 2     items = items + range(y)
+# Python Warm-up
 
-TypeError: can only concatenate list (not "range") to list
-```
+## How is the behavior different in Python 3.13?
+
+<img src="img/demo.3.13.bad_dict.gif" alt="An animated terminal showing python code" />
+
+# Python Warm-up
+
+## What's going wrong here?
+
+<img src="img/demo.3.12.dog_paste.gif" alt="An animated terminal showing python code" />
+
+# Python Warm-up
+
+## How is the behavior different in Python 3.13?
+
+<img src="img/demo.3.13.dog_paste.gif" alt="An animated terminal showing python code" />
 
 # Sponsor
 
-<center><img src="img/verve-logo.png" alt="Sponsor Logo: Verve Industrial" width="500px"/></center>
+<center><img src="img/apartmentiq_logo.png" alt="Sponsor Logo: ApartmentIQ" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -132,26 +118,6 @@ TypeError: can only concatenate list (not "range") to list
 
 ### Talk to your employer about Sponsorship!
 
-# MadPy Calendar
-
-**2nd Thursdays of the Month**
-<table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
-    <tr>
-        <td style="width: 33%; text-align: center;">
-            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
-        </td>
-        <td style="width: 33%; text-align: center;">
-            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
-        </td>
-        <td style="width: 33%; text-align: center;">
-            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align: center;">October 10th</td>
-        <td style="text-align: center;">November 14th</td>
-        <td style="text-align: center;">December 12th</td>
-    </tr>
-</table>
+<img src="https://madpy.com/static/images/2024-10-10-The-Rust-Invasion-Social-Card.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
