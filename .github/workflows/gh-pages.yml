@@ -19,8 +19,8 @@ jobs:
             sudo apt update
             sudo apt install python3-pip
             sudo apt install pipx
-            pipx install nbconvert
-            pipx inject nbconvert cogapp
+            pipx install nbconvert cogapp
+            pipx inject cogapp nbconvert
             jupyter-nbconvert welcome.ipynb --to slides
             mv welcome.slides.html index.html
             cog --check README.md
