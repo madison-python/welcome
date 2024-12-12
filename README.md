@@ -42,52 +42,37 @@ Learn more about the MadPy Code of Conduct:
 https://github.com/madison-python/code-of-conduct
 
 
-# VOTE!
 
-<center>
-    Visit <a href="https://myvote.wi.gov/">https://myvote.wi.gov/</a><br /><br />
-    <img src="https://myvote.wi.gov/Portals/0/Images/MyVote.png" alt="MyVote WI Logo" style="width: auto; height: 200px;"/><br />
-</center>
+```python
+def expand(s: str) -> list[int]:
+  """
+  Turn "1-5,7,9,10-13" into a list of numbers
+  """
+  return [
+    num
+    for p in s.split(",")
+      for a, _, b in [p.partition("-")]
+        for num in range(int(a), int(b or a) + 1)
+  ]
+```
 
-# Python Warm-up
+<img src="img/python-snip-expand-str.png" alt="A screenshot of a snippet of python code"/>
 
-## What's going wrong here?
 
-<img src="img/demo.3.12.good_dict.gif" alt="An animated terminal showing python code" />
+```python
+expand("1-5, 7, 9, 10-13")
+```
 
-# Python Warm-up
 
-## How is the behavior different in Python 3.13?
 
-<img src="img/demo.3.13.good_dict.gif" alt="An animated terminal showing python code" />
 
-# Python Warm-up
+    [1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13]
 
-## What's going wrong here?
 
-<img src="img/demo.3.12.bad_dict.gif" alt="An animated terminal showing python code" />
-
-# Python Warm-up
-
-## How is the behavior different in Python 3.13?
-
-<img src="img/demo.3.13.bad_dict.gif" alt="An animated terminal showing python code" />
-
-# Python Warm-up
-
-## What's going wrong here?
-
-<img src="img/demo.3.12.dog_paste.gif" alt="An animated terminal showing python code" />
-
-# Python Warm-up
-
-## How is the behavior different in Python 3.13?
-
-<img src="img/demo.3.13.dog_paste.gif" alt="An animated terminal showing python code" />
 
 # Sponsor
 
-<center><img src="img/apartmentiq_logo.png" alt="Sponsor Logo: ApartmentIQ" width="500px"/></center>
+<center><img src="img/verve-logo.png" alt="Sponsor Logo: Verve Industrial" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -103,7 +88,7 @@ https://github.com/madison-python/code-of-conduct
     <td style="border: none;"><img src="https://www.github.com/favicon.ico" alt="GitHub" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://github.com/madison-python">github.com/madison-python</a></td>
   </tr>
   <tr style="background-color: transparent; border: none;">
-    <td style="border: none;"><img src="https://fosstodon.org/favicon.ico" alt="Mastodon" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://fosstodon.org/@madpy">fosstodon.org/@madpy</a></td>
+    <td style="border: none;"><img src="img/fosstodon-logo.png" alt="Mastodon" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://fosstodon.org/@madpy">fosstodon.org/@madpy</a></td>
   </tr>
   <tr style="background-color: transparent; border: none;">
     <td style="border: none;"><img src="https://www.slack.com/favicon.ico" alt="Slack" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://slack.madpy.com">slack.madpy.com</a></td>
@@ -118,6 +103,30 @@ https://github.com/madison-python/code-of-conduct
 
 ### Talk to your employer about Sponsorship!
 
-<img src="https://madpy.com/static/images/2024-10-10-The-Rust-Invasion-Social-Card.png" alt="Logo for the MadPy talk" />
+# MadPy Quick Survey
+
+## Question 1: Social Media -- Where Should MadPy Be?
+
+<img src="img/qr-code-2024-12-12-MadPy-Social-Media.png" alt="QR Code" width=300px />
+
+https://www.bli.do/2024-12-12-MadPy-Social-Media
+
+# MadPy Quick Survey
+
+## Question 2: Office Hours -- Topics You Could Be A Mentor On
+
+<img src="img/qr-code-2024-12-12-MadPy-Office-Hours.png" alt="QR Code" width=300px />
+
+https://www.bli.do/2024-12-12-MadPy-Office-Hours
+
+# MadPy Quick Survey
+
+## Question 3: Favorite Event Types You Want To See More Of
+
+<img src="img/qr-code-2024-12-12-MadPy-Favorite-Events.png" alt="QR Code" width=300px />
+
+https://www.bli.do/2024-12-12-MadPy-Favorite-Events
+
+<img src="https://madpy.com/static/images/2024-12-12-Tests-in-the-Real-World-Social-Card-1792x1024.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
