@@ -42,37 +42,9 @@ Learn more about the MadPy Code of Conduct:
 https://github.com/madison-python/code-of-conduct
 
 
-
-```python
-def expand(s: str) -> list[int]:
-  """
-  Turn "1-5,7,9,10-13" into a list of numbers
-  """
-  return [
-    num
-    for p in s.split(",")
-      for a, _, b in [p.partition("-")]
-        for num in range(int(a), int(b or a) + 1)
-  ]
-```
-
-<img src="img/python-snip-expand-str.png" alt="A screenshot of a snippet of python code"/>
-
-
-```python
-expand("1-5, 7, 9, 10-13")
-```
-
-
-
-
-    [1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13]
-
-
-
 # Sponsor
 
-<center><img src="img/verve-logo.png" alt="Sponsor Logo: Verve Industrial" width="500px"/></center>
+<center><img src="img/workday-logo.png" alt="Sponsor Logo: Workday" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -103,30 +75,28 @@ expand("1-5, 7, 9, 10-13")
 
 ### Talk to your employer about Sponsorship!
 
-# MadPy Quick Survey
+# MadPy Calendar
 
-## Question 1: Social Media -- Where Should MadPy Be?
+**2nd Thursdays of the Month**
+<table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
+    <tr>
+        <td style="width: 46%; text-align: center;">
+            <img src="https://madpy.com/static/images/2025-03-13-Improving-Receipt-Understanding-Social-Card-1792x1024.png" alt="Improving Receipt Understanding @ Fetch" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 27%; text-align: center;">
+            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 27%; text-align: center;">
+            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">March 13th<br><strong>Requires online RSVP</strong></td>
+        <td style="text-align: center;">April 10th</td>
+        <td style="text-align: center;">May 8th</td>
+    </tr>
+</table>
 
-<img src="img/qr-code-2024-12-12-MadPy-Social-Media.png" alt="QR Code" width=300px />
-
-https://www.bli.do/2024-12-12-MadPy-Social-Media
-
-# MadPy Quick Survey
-
-## Question 2: Office Hours -- Topics You Could Be A Mentor On
-
-<img src="img/qr-code-2024-12-12-MadPy-Office-Hours.png" alt="QR Code" width=300px />
-
-https://www.bli.do/2024-12-12-MadPy-Office-Hours
-
-# MadPy Quick Survey
-
-## Question 3: Favorite Event Types You Want To See More Of
-
-<img src="img/qr-code-2024-12-12-MadPy-Favorite-Events.png" alt="QR Code" width=300px />
-
-https://www.bli.do/2024-12-12-MadPy-Favorite-Events
-
-<img src="https://madpy.com/static/images/2024-12-12-Tests-in-the-Real-World-Social-Card-1792x1024.png" alt="Logo for the MadPy talk" />
+<img src="https://madpy.com/static/images/2025-02-13-What-Is-Git-Social-Card-1792x1024.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
