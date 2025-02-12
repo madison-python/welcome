@@ -71,6 +71,27 @@ https://github.com/madison-python/code-of-conduct
 </table>
 
 
+<table>
+    <tr>
+        <td>
+            <img src="https://madpy.com/static/images/bookclub-logo.png", width=500px alt="Drawing of a magpie reading books"/>
+        </td>
+        <td>
+            <h1>MadPy Book&nbsp;Club</h1>
+            <h3>New book starts Monday!</h3>
+            <h5><strong><u>Operating Systems: Three Easy Pieces</u></strong><br />
+                by Remzi H and Andrea C Arpaci-Dusseau</h5>
+            <h6><i>Previous books:</i>
+            <uo>
+                <li><u>Designing Data-Intensive Applications</u></li>
+                <li>The Mojo 🔥 Manual</li>
+                <li><u>Crafting Intepreters</u></li>
+            </uo></h6>
+            <h5>Learn more at <strong><a href="https://madpy.com/bookclub">madpy.com/bookclub</a></strong></h5>
+        </td>
+    </tr>
+</table>
+
 # The Best Way to Help MadPy
 
 ### Talk to your employer about Sponsorship!
