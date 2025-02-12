@@ -74,7 +74,7 @@ https://github.com/madison-python/code-of-conduct
 <table>
     <tr>
         <td>
-            <img src="img/bookclub-logo.png", width=500px alt="Drawing of a magpie reading books"/>
+            <img src="https://madpy.com/static/images/bookclub-logo.png", width=500px alt="Drawing of a magpie reading books"/>
         </td>
         <td>
             <h1>MadPy Book&nbsp;Club</h1>
