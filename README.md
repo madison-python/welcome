@@ -42,9 +42,280 @@ Learn more about the MadPy Code of Conduct:
 https://github.com/madison-python/code-of-conduct
 
 
+# Python Warm-Up
+
+
+```python
+next_12_madpy_meetups = 12 * [
+    {
+        "topic": "TBD",
+        "host": "Ed"
+    }
+]
+```
+
+
+```python
+next_12_madpy_meetups
+```
+
+
+
+
+    [{'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'},
+     {'topic': 'TBD', 'host': 'Ed'}]
+
+
+
+
+```python
+upcoming_months = [
+    "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep",
+    "Oct", "Nov", "Dec",
+    "Jan", "Feb", "Mar",
+]
+```
+
+## A Logistical Challenge
+
+
+```python
+print("Ed needs a substitute for July")
+
+july_index = upcoming_months.index("Jul")
+
+print(f"July will be month {july_index}")
+```
+
+    Ed needs a substitute for July
+    July will be month 3
+
+
+## Let's put Josh on the spot
+
+
+```python
+next_12_madpy_meetups[july_index]["host"] = "Josh"
+```
+
+
+```python
+next_12_madpy_meetups
+```
+
+
+
+
+    [{'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'},
+     {'topic': 'TBD', 'host': 'Josh'}]
+
+
+
+#### Muahahaha!
+
+## What happened?
+
+
+```python
+person_1 = {
+    "name": "Ed",
+    "role": "Host with the most",
+}
+
+person_2 = {
+    "name": "Ed",
+    "role": "Host with the most",
+}
+
+person_1 == person_2
+```
+
+
+
+
+    True
+
+
+
+
+```python
+person_1 is person_2
+```
+
+
+
+
+    False
+
+
+
+#### Value equality isn't the only kind of equality
+
+#### There is also "reference equality"
+
+## Lists of Equal Things
+
+
+```python
+list_of_people = [person_1, person_2]
+
+list_of_people[0] == list_of_people[1]
+```
+
+
+
+
+    True
+
+
+
+
+```python
+list_of_people[0] is list_of_people[1]
+```
+
+
+
+
+    False
+
+
+
+
+```python
+list_of_people = 2 * [person_1]
+
+list_of_people[0] == list_of_people[1]
+```
+
+
+
+
+    True
+
+
+
+
+```python
+list_of_people[0] is list_of_people[1]
+```
+
+
+
+
+    True
+
+
+
+
+```python
+list_of_people = 2 * [person_1]
+
+list_of_people
+```
+
+
+
+
+    [{'name': 'Ed', 'role': 'Host with the most'},
+     {'name': 'Ed', 'role': 'Host with the most'}]
+
+
+
+
+```python
+list_of_people[0]["role"] = "Party animal!"
+```
+
+
+```python
+list_of_people
+```
+
+
+
+
+    [{'name': 'Ed', 'role': 'Party animal!'},
+     {'name': 'Ed', 'role': 'Party animal!'}]
+
+
+
+## Review
+
+#### Things with the same value may be held in different places in memory
+
+
+```python
+sum_of_cubes = sum((i**3 for i in range(10)))
+current_year = 2025
+
+sum_of_cubes == 2025
+```
+
+
+
+
+    True
+
+
+
+
+```python
+sum_of_cubes is current_year
+```
+
+
+
+
+    False
+
+
+
+#### Just because values are equal doesn't mean their references are
+
+## Take Home Challenge
+
+
+```python
+number_of_months_in_2025 = 12
+num_madpy_events_in_2025 = 12
+
+number_of_months_in_2025 is num_madpy_events_in_2025
+```
+
+
+
+
+    True
+
+
+
+😵‍💫
+
 # Sponsor
 
-<center><img src="img/workday-logo.png" alt="Sponsor Logo: Workday" width="500px"/></center>
+<center><img src="img/Fetch_Rewards_Logo.jpg" alt="Sponsor Logo: Fetch Rewards" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -71,27 +342,6 @@ https://github.com/madison-python/code-of-conduct
 </table>
 
 
-<table>
-    <tr>
-        <td>
-            <img src="https://madpy.com/static/images/bookclub-logo.png", width=500px alt="Drawing of a magpie reading books"/>
-        </td>
-        <td>
-            <h1>MadPy Book&nbsp;Club</h1>
-            <h3>New book starts Monday!</h3>
-            <h5><strong><u>Operating Systems: Three Easy Pieces</u></strong><br />
-                by Remzi H and Andrea C Arpaci-Dusseau</h5>
-            <h6><i>Previous books:</i>
-            <uo>
-                <li><u>Designing Data-Intensive Applications</u></li>
-                <li>The Mojo 🔥 Manual</li>
-                <li><u>Crafting Intepreters</u></li>
-            </uo></h6>
-            <h5>Learn more at <strong><a href="https://madpy.com/bookclub">madpy.com/bookclub</a></strong></h5>
-        </td>
-    </tr>
-</table>
-
 # The Best Way to Help MadPy
 
 ### Talk to your employer about Sponsorship!
@@ -101,19 +351,23 @@ https://github.com/madison-python/code-of-conduct
 **2nd Thursdays of the Month**
 <table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
     <tr>
-        <td style="width: 64%; text-align: center;">
-            <img src="https://madpy.com/static/images/2025-03-13-Improving-Receipt-Understanding-Social-Card-1792x1024.png" alt="Improving Receipt Understanding @ Fetch" style="width: 100%; height: auto;">
+        <td style="width: 35%; text-align: center;">
+            <img src="https://madpy.com/static/images/2025-04-10-MadPy-Social-Blue-Moon-Social-Card-4032x3024.png" alt="MadPy Social: Blue Moon" style="width: 100%; height: auto;">
         </td>
-        <td style="width: 36%; text-align: center;">
-            <img src="img/qr-code-2025-03-13-rsvp.png" alt="TBD" style="width: 100%; height: auto;">
+        <td style="width: 26%; text-align: center;">
+            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 39%; text-align: center;">
+            <img src="https://madpy.com/static/images/2025-06-12-Debugging-Open-Source-Social-Card-1413x953.png" alt="Debugging Open Source" style="width: 100%; height: auto;">
         </td>
     </tr>
     <tr>
-        <td style="text-align: center;">March 13th</td>
-        <td style="text-align: center;"><strong>Online RSVP Required</strong><br><a href="https://lu.ma/uc9se65d">https://lu.ma/uc9se65d</a></td>
+        <td style="text-align: center;">April 10th</td>
+        <td style="text-align: center;">May 8th</td>
+        <td style="text-align: center;">June 12th</td>
     </tr>
 </table>
 
-<img src="https://madpy.com/static/images/2025-02-13-What-Is-Git-Social-Card-1792x1024.png" alt="Logo for the MadPy talk" />
+<img src="https://madpy.com/static/images/2025-03-13-Improving-Receipt-Understanding-Social-Card-1792x1024.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
