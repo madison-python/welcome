@@ -46,276 +46,275 @@ https://github.com/madison-python/code-of-conduct
 
 
 ```python
-next_12_madpy_meetups = 12 * [
-    {
-        "topic": "TBD",
-        "host": "Ed"
-    }
-]
-```
+name = "Ed Rogers"
 
-
-```python
-next_12_madpy_meetups
+message = f"Hi {name}!"
+message
 ```
 
 
 
 
-    [{'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'},
-     {'topic': 'TBD', 'host': 'Ed'}]
+    'Hi Ed Rogers!'
 
 
 
 
 ```python
-upcoming_months = [
-    "Apr", "May", "Jun",
-    "Jul", "Aug", "Sep",
-    "Oct", "Nov", "Dec",
-    "Jan", "Feb", "Mar",
-]
+import sys
+!{sys.executable} -V
 ```
 
-## A Logistical Challenge
+    Python 3.14.0b1
+
+
+## Introducing `t` Strings
+
+Coming to Python 3.14
 
 
 ```python
-print("Ed needs a substitute for July")
+name = "Ed Rogers"
 
-july_index = upcoming_months.index("Jul")
-
-print(f"July will be month {july_index}")
+message_template = t"Hi {name}!"
+message_template
 ```
 
-    Ed needs a substitute for July
-    July will be month 3
 
 
-## Let's put Josh on the spot
+
+    Template(strings=('Hi ', '!'), interpolations=(Interpolation('Ed Rogers', 'name', None, ''),))
+
+
+
+### A Use Case
+
+Dave takes names, and makes cool greetings!
 
 
 ```python
-next_12_madpy_meetups[july_index]["host"] = "Josh"
+from random import choice, seed
+seed(7)
+
+def daves_cool_greeting_tool(name):
+    return choice([
+        f"Howdy {name}!",
+        f"Konichiwa {name}!",
+        f"Hey {name}, looking good!",
+        f"We all <3 you, {name}!",
+    ])
+```
+
+Ed takes messages, and turns them into HTML...
+
+
+```python
+def eds_cool_html_renderer(message):
+    return "<h1>" + message + "</h1>"
 ```
 
 
 ```python
-next_12_madpy_meetups
+daves_cool_greeting_tool(name)
 ```
 
 
 
 
-    [{'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'},
-     {'topic': 'TBD', 'host': 'Josh'}]
-
-
-
-#### Muahahaha!
-
-## What happened?
-
-
-```python
-person_1 = {
-    "name": "Ed",
-    "role": "Host with the most",
-}
-
-person_2 = {
-    "name": "Ed",
-    "role": "Host with the most",
-}
-
-person_1 == person_2
-```
-
-
-
-
-    True
+    'Hey Ed Rogers, looking good!'
 
 
 
 
 ```python
-person_1 is person_2
+eds_cool_html_renderer(daves_cool_greeting_tool(name))
 ```
 
 
 
 
-    False
-
-
-
-#### Value equality isn't the only kind of equality
-
-#### There is also "reference equality"
-
-## Lists of Equal Things
-
-
-```python
-list_of_people = [person_1, person_2]
-
-list_of_people[0] == list_of_people[1]
-```
-
-
-
-
-    True
+    '<h1>Konichiwa Ed Rogers!</h1>'
 
 
 
 
 ```python
-list_of_people[0] is list_of_people[1]
+from IPython.core.display import HTML
+
+HTML(eds_cool_html_renderer(daves_cool_greeting_tool(name)))
 ```
 
 
 
 
-    False
+<h1>We all <3 you, Ed Rogers!</h1>
+
+
+
+### A challenger appears
+
+
+```python
+joshs_full_name = """Josh <script>alert("evil")</script> Karpel"""
+```
+
+
+```python
+daves_cool_greeting_tool(joshs_full_name)
+```
+
+
+
+
+    'Howdy Josh <script>alert("evil")</script> Karpel!'
 
 
 
 
 ```python
-list_of_people = 2 * [person_1]
-
-list_of_people[0] == list_of_people[1]
+eds_cool_html_renderer(daves_cool_greeting_tool(joshs_full_name))
 ```
 
 
 
 
-    True
+    '<h1>Howdy Josh <script>alert("evil")</script> Karpel!</h1>'
 
 
 
 
 ```python
-list_of_people[0] is list_of_people[1]
+HTML(eds_cool_html_renderer(daves_cool_greeting_tool(joshs_full_name)))
 ```
 
 
 
 
-    True
+<h1>Howdy Josh <script>alert("evil")</script> Karpel!</h1>
 
 
 
 
 ```python
-list_of_people = 2 * [person_1]
+def daves_cool_greeting_tool(name):
+    return choice([
+        f"Howdy {name}!",
+        f"Konichiwa {name}!",
+        f"Hey {name}, looking good!",
+        f"We all <3 you, {name}!",
+    ])
+```
 
-list_of_people
+
+```python
+def eds_cool_html_renderer(message):
+    return "<h1>" + message + "</h1>"
+```
+
+### Using a `t` String
+
+
+```python
+greeting_template = t"We all <3 you, {joshs_full_name}!"
+greeting_template
 ```
 
 
 
 
-    [{'name': 'Ed', 'role': 'Host with the most'},
-     {'name': 'Ed', 'role': 'Host with the most'}]
+    Template(strings=('We all <3 you, ', '!'), interpolations=(Interpolation('Josh <script>alert("evil")</script> Karpel', 'joshs_full_name', None, ''),))
 
 
 
 
 ```python
-list_of_people[0]["role"] = "Party animal!"
+from string.templatelib import Template, Interpolation
+import html
+
+def safe_f(template: Template) -> str:
+    """Implement f-string behavior using the PEP 750 t-string behavior."""
+    parts = []
+    for item in template:
+        match item:
+            case str() as s:
+                parts.append(s)
+            case Interpolation(value, _, conversion, format_spec):
+                value = format(html.escape(value), format_spec)
+                parts.append(value)
+    return "".join(parts)    
 ```
 
 
 ```python
-list_of_people
+safe_f(greeting_template)
 ```
 
 
 
 
-    [{'name': 'Ed', 'role': 'Party animal!'},
-     {'name': 'Ed', 'role': 'Party animal!'}]
-
-
-
-## Review
-
-#### Things with the same value may be held in different places in memory
-
-
-```python
-sum_of_cubes = sum((i**3 for i in range(10)))
-current_year = 2025
-
-sum_of_cubes == 2025
-```
-
-
-
-
-    True
+    'We all <3 you, Josh &lt;script&gt;alert(&quot;evil&quot;)&lt;/script&gt; Karpel!'
 
 
 
 
 ```python
-sum_of_cubes is current_year
+def daves_cool_greeting_tool(name):
+    greeting = choice(
+        [
+            t"Howdy {name}!",
+            t"Konichiwa {name}!",
+            t"Hey {name}, looking good!",
+            t"We all <3 you, {name}!",
+        ]
+    )
+    return greeting
 ```
-
-
-
-
-    False
-
-
-
-#### Just because values are equal doesn't mean their references are
-
-## Take Home Challenge
 
 
 ```python
-number_of_months_in_2025 = 12
-num_madpy_events_in_2025 = 12
+def eds_cool_html_renderer(message_template):
+    return "<h1>" + safe_f(message_template) + "</h1>"
+```
 
-number_of_months_in_2025 is num_madpy_events_in_2025
+
+```python
+daves_cool_greeting_tool(joshs_full_name)
 ```
 
 
 
 
-    True
+    Template(strings=('Hey ', ', looking good!'), interpolations=(Interpolation('Josh <script>alert("evil")</script> Karpel', 'name', None, ''),))
 
 
 
-😵‍💫
+
+```python
+eds_cool_html_renderer(daves_cool_greeting_tool(joshs_full_name))
+```
+
+
+
+
+    '<h1>Howdy Josh &lt;script&gt;alert(&quot;evil&quot;)&lt;/script&gt; Karpel!</h1>'
+
+
+
+
+```python
+HTML(eds_cool_html_renderer(daves_cool_greeting_tool(joshs_full_name)))
+```
+
+
+
+
+<h1>Konichiwa Josh &lt;script&gt;alert(&quot;evil&quot;)&lt;/script&gt; Karpel!</h1>
+
+
 
 # Sponsor
 
-<center><img src="img/Fetch_Rewards_Logo.jpg" alt="Sponsor Logo: Fetch Rewards" width="500px"/></center>
+<center><img src="img/apartmentiq_logo.png" alt="Sponsor Logo: ApartmentIQ" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -346,28 +345,6 @@ number_of_months_in_2025 is num_madpy_events_in_2025
 
 ### Talk to your employer about Sponsorship!
 
-# MadPy Calendar
-
-**2nd Thursdays of the Month**
-<table style="width: 100%; table-layout: fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
-    <tr>
-        <td style="width: 35%; text-align: center;">
-            <img src="https://madpy.com/static/images/2025-04-10-MadPy-Social-Blue-Moon-Social-Card-4032x3024.png" alt="MadPy Social: Blue Moon" style="width: 100%; height: auto;">
-        </td>
-        <td style="width: 26%; text-align: center;">
-            <img src="img/Unknown-Social-Card.png" alt="TBD" style="width: 100%; height: auto;">
-        </td>
-        <td style="width: 39%; text-align: center;">
-            <img src="https://madpy.com/static/images/2025-06-12-Debugging-Open-Source-Social-Card-1413x953.png" alt="Debugging Open Source" style="width: 100%; height: auto;">
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align: center;">April 10th</td>
-        <td style="text-align: center;">May 8th</td>
-        <td style="text-align: center;">June 12th</td>
-    </tr>
-</table>
-
-<img src="https://madpy.com/static/images/2025-03-13-Improving-Receipt-Understanding-Social-Card-1792x1024.png" alt="Logo for the MadPy talk" />
+<img src="https://madpy.com/static/images/2025-06-12-Debugging-Open-Source-Social-Card-1413x953.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
