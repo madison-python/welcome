@@ -42,9 +42,11 @@ Learn more about the MadPy Code of Conduct:
 https://github.com/madison-python/code-of-conduct
 
 
-# Sponsor
+# Python Warm-Up
 
-<center><img src="img/pytroll_light_big.png" alt="Sponsor Logo: Pytroll" width="500px"/></center>
+# Thank You to Our Sponsor
+
+## 🍕
 
 # Want more MadPy?
 
@@ -75,6 +77,6 @@ https://github.com/madison-python/code-of-conduct
 
 ### Talk to your employer about Sponsorship!
 
-<img src="https://madpy.com/static/images/2025-08-14-Setting-Python-Threading-Free-Social-Card-1536x1024.png" alt="Logo for the MadPy talk" />
+<img src="https://madpy.com/static/images/2025-09-11-A-Crash-Course-in-Causal-Inference-social-card-1536x1024.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
