@@ -42,6 +42,10 @@ Learn more about the MadPy Code of Conduct:
 https://github.com/madison-python/code-of-conduct
 
 
+# Sponsor
+
+<img src="img/problem_solvers_guild_logo.png" alt="Sponsor Logo: Problem Solvers Guild" height="200px"/>
+
 # Want more MadPy?
 
 
@@ -71,6 +75,6 @@ https://github.com/madison-python/code-of-conduct
 
 ### Talk to your employer about Sponsorship!
 
-<img src="https://madpy.com/static/images/2025-11-13-MadPy-Book-Club-Retrospective-social-card-1860x1395.png" alt="Logo for the MadPy talk" />
+<img src="https://madpy.com/static/images/2025-12-11-MadPy-Lightning-Talks-social-card-1800x1200.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
