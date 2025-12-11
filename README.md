@@ -44,7 +44,7 @@ https://github.com/madison-python/code-of-conduct
 
 # Sponsor
 
-<img src="img/problem_solvers_guild_logo.png" alt="Sponsor Logo: Problem Solvers Guild" height="200px"/>
+<center><img src="img/problem_solvers_guild_logo.png" alt="Sponsor Logo: Problem Solvers Guild" width="500px"/></center>
 
 # Want more MadPy?
 
