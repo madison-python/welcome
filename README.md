@@ -44,7 +44,7 @@ https://github.com/madison-python/code-of-conduct
 
 # Sponsor
 
-<center><img src="img/problem_solvers_guild_logo.png" alt="Sponsor Logo: Problem Solvers Guild" width="500px"/></center>
+<center><img src="img/workday-logo.png" alt="Sponsor Logo: Workday" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -75,6 +75,6 @@ https://github.com/madison-python/code-of-conduct
 
 ### Talk to your employer about Sponsorship!
 
-<img src="https://madpy.com/static/images/2025-12-11-MadPy-Lightning-Talks-social-card-1800x1200.png" alt="Logo for the MadPy talk" />
+<img src="https://madpy.com/static/images/2026-01-08-Your-Laptop-Isnt-a-Bop-It-social-card-1536x1024.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
