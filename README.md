@@ -42,9 +42,95 @@ Learn more about the MadPy Code of Conduct:
 https://github.com/madison-python/code-of-conduct
 
 
-# Sponsor
+# Python Warm-Up
 
-<center><img src="img/workday-logo.png" alt="Sponsor Logo: Workday" width="500px"/></center>
+## Calling Yield Multiple Times
+
+
+```python
+def some_things():
+    yield 1
+    yield 2
+    yield 3
+```
+
+
+```python
+def them():
+    for thing in some_things():
+        yield thing
+```
+
+What happens when we call `list(them())`?
+
+
+```python
+list(them())
+```
+
+
+
+
+    [1, 2, 3]
+
+
+
+## Changing `them()` to return a list instead of a generator
+
+
+```python
+def some_things_as_a_list():
+    return list(some_things())
+```
+
+
+```python
+def them():
+    return some_things_as_a_list()  # Using return
+                                    # instead of the yield call
+    for thing in some_things():
+        yield thing
+```
+
+What will `list(them())` return?
+
+
+```python
+list(them())
+```
+
+
+
+
+    []
+
+
+
+## Taking a closer look at `them()`
+
+
+```python
+def them():
+    return some_things_as_a_list()
+    # for thing in some_things():
+    #     yield thing
+```
+
+
+```python
+list(them())
+```
+
+
+
+
+    [1, 2, 3]
+
+
+
+Because `yield` appears in the function body, Python compiles `them` as a **generator function** — at compile time, before any code runs.
+
+Calling `them()` returns a generator object without executing anything. The `return` value is silently ignored during iteration.
 
 # Want more MadPy?
 
@@ -75,6 +161,6 @@ https://github.com/madison-python/code-of-conduct
 
 ### Talk to your employer about Sponsorship!
 
-<img src="https://madpy.com/static/images/2026-01-08-Your-Laptop-Isnt-a-Bop-It-social-card-1536x1024.png" alt="Logo for the MadPy talk" />
+<img src="https://madpy.com/static/images/2026-03-05-Stealing-From-Thieves-social-card-1536x1024.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
