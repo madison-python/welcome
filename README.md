@@ -44,93 +44,276 @@ https://github.com/madison-python/code-of-conduct
 
 # Python Warm-Up
 
-## Calling Yield Multiple Times
+#### A `get` function with a default:
 
 
 ```python
-def some_things():
-    yield 1
-    yield 2
-    yield 3
+madpy_menu = {
+    "pizza": "Ian's",
+    "beverage": "Sprite",
+}
 ```
 
 
 ```python
-def them():
-    for thing in some_things():
-        yield thing
-```
-
-What happens when we call `list(them())`?
-
-
-```python
-list(them())
-```
-
-
-
-
-    [1, 2, 3]
-
-
-
-## Changing `them()` to return a list instead of a generator
-
-
-```python
-def some_things_as_a_list():
-    return list(some_things())
+def get_menu_item(key, default=None):
+    value = madpy_menu.get(key)
+    if value is None:
+        return default
+    return value
 ```
 
 
 ```python
-def them():
-    return some_things_as_a_list()  # Using return
-                                    # instead of the yield call
-    for thing in some_things():
-        yield thing
-```
-
-What will `list(them())` return?
-
-
-```python
-list(them())
+get_menu_item("pizza")
 ```
 
 
 
 
-    []
+    "Ian's"
 
 
-
-## Taking a closer look at `them()`
 
 
 ```python
-def them():
-    return some_things_as_a_list()
-    # for thing in some_things():
-    #     yield thing
-```
-
-
-```python
-list(them())
+get_menu_item("salad", default="Sorry, not tonight!")
 ```
 
 
 
 
-    [1, 2, 3]
+    'Sorry, not tonight!'
 
 
 
-Because `yield` appears in the function body, Python compiles `them` as a **generator function** — at compile time, before any code runs.
+#### Trouble with the `get` function:
 
-Calling `them()` returns a generator object without executing anything. The `return` value is silently ignored during iteration.
+
+```python
+madpy_menu = {
+    "pizza": "Ian's",
+    "beverage": "Sprite",
+    "dessert": None,
+}
+```
+
+
+```python
+def get_menu_item(key, default=None):
+    value = madpy_menu.get(key)
+    if value is None:
+        return default
+    return value
+```
+
+
+```python
+get_menu_item("salad", default="Sorry, not tonight!")
+```
+
+
+
+
+    'Sorry, not tonight!'
+
+
+
+
+```python
+get_menu_item("dessert", default="Sorry, not tonight!")
+```
+
+
+
+
+    'Sorry, not tonight!'
+
+
+
+Can't distinguish between **not** being on the menu, and being on the menu and `None`-valued!
+
+#### Using a "sentinel" value
+
+
+```python
+madpy_menu = {
+    "pizza": "Ian's",
+    "beverage": "Sprite",
+    "dessert": None,
+}
+```
+
+
+```python
+MISSING = object()
+
+def get_menu_item(key, default=None):
+    value = madpy_menu.get(key, MISSING)
+    if value is MISSING:
+        return default
+    return value
+```
+
+
+```python
+get_menu_item("salad", default="Sorry, not tonight!")
+```
+
+
+
+
+    'Sorry, not tonight!'
+
+
+
+
+```python
+get_menu_item("dessert", default="Sorry, not tonight!") is None
+```
+
+
+
+
+    True
+
+
+
+
+```python
+print(MISSING)
+```
+
+    <object object at 0x7bf5c437d710>
+
+
+#### Can we make it prettier?
+
+
+```python
+madpy_menu = {
+    "pizza": "Ian's",
+    "beverage": "Sprite",
+    "dessert": None,
+}
+```
+
+
+```python
+from enum import StrEnum
+
+class Missing(StrEnum):
+    MISSING = "MISSING"
+
+def get_menu_item(key, default=None):
+    value = madpy_menu.get(key, Missing.MISSING)
+    if value is Missing.MISSING:
+        return default
+    return value
+```
+
+
+```python
+get_menu_item("salad", default="Sorry, not tonight!")
+```
+
+
+
+
+    'Sorry, not tonight!'
+
+
+
+
+```python
+get_menu_item("dessert", default="Sorry, not tonight!") is None
+```
+
+
+
+
+    True
+
+
+
+
+```python
+print(Missing.MISSING)
+```
+
+    MISSING
+
+
+#### New in Python 3.15 (to be released in October 2026)
+
+
+```python
+from sys import version
+
+print(version)
+```
+
+    3.15.0b2 (main, Jun  2 2026, 22:26:04) [Clang 22.1.3 ]
+
+
+
+```python
+from builtins import sentinel
+
+MISSING = sentinel("MISSING")
+```
+
+
+```python
+madpy_menu = {
+    "pizza": "Ian's",
+    "beverage": "Sprite",
+    "dessert": None,
+}
+```
+
+
+```python
+MISSING = sentinel("MISSING")
+
+def get_menu_item(key, default=None):
+    value = madpy_menu.get(key, MISSING)
+    if value is MISSING:
+        return default
+    return value
+```
+
+
+```python
+get_menu_item("salad", default="Sorry, not tonight!")
+```
+
+
+
+
+    'Sorry, not tonight!'
+
+
+
+
+```python
+get_menu_item("dessert", default="Sorry, not tonight!") is None
+```
+
+
+
+
+    True
+
+
+
+
+```python
+print(MISSING)
+```
+
+    MISSING
+
 
 # Want more MadPy?
 
@@ -161,6 +344,6 @@ Calling `them()` returns a generator object without executing anything. The `ret
 
 ### Talk to your employer about Sponsorship!
 
-<img src="https://madpy.com/static/images/2026-03-05-Stealing-From-Thieves-social-card-1536x1024.png" alt="Logo for the MadPy talk" />
+<img src="https://madpy.com/static/images/2026-06-04-Agentic-Coding-1550x1100.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
