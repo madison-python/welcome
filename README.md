@@ -44,132 +44,79 @@ https://github.com/madison-python/code-of-conduct
 
 # Python Warm-Up
 
-#### A `get` function with a default:
+#### Meet `foo.py`
 
 
 ```python
-madpy_menu = {
-    "pizza": "Ian's",
-    "beverage": "Sprite",
-}
+%%writefile foo.py
+print("loading foo!")
+
+def greet():
+    return "hello from foo"
+```
+
+    Writing foo.py
+
+
+#### The baseline: importing `foo`
+
+
+```python
+import foo
+```
+
+    loading foo!
+
+
+
+```python
+def run():
+    return foo.greet()
 ```
 
 
 ```python
-def get_menu_item(key, default=None):
-    value = madpy_menu.get(key)
-    if value is None:
-        return default
-    return value
-```
-
-
-```python
-get_menu_item("pizza")
-```
-
-
-
-
-    "Ian's"
-
-
-
-
-```python
-get_menu_item("salad", default="Sorry, not tonight!")
-```
-
-
-
-
-    'Sorry, not tonight!'
-
-
-
-#### Trouble with the `get` function:
-
-
-```python
-madpy_menu = {
-    "pizza": "Ian's",
-    "beverage": "Sprite",
-    "dessert": None,
-}
-```
-
-
-```python
-def get_menu_item(key, default=None):
-    value = madpy_menu.get(key)
-    if value is None:
-        return default
-    return value
-```
-
-
-```python
-get_menu_item("salad", default="Sorry, not tonight!")
+run()
 ```
 
 
 
 
-    'Sorry, not tonight!'
+    'hello from foo'
 
 
 
 
 ```python
-get_menu_item("dessert", default="Sorry, not tonight!")
+import sys
+del sys.modules["foo"]
+```
+
+#### Watching `sys.modules` (eager import)
+
+
+```python
+"foo" in sys.modules
 ```
 
 
 
 
-    'Sorry, not tonight!'
+    False
 
 
-
-Can't distinguish between **not** being on the menu, and being on the menu and `None`-valued!
-
-#### Using a "sentinel" value
 
 
 ```python
-madpy_menu = {
-    "pizza": "Ian's",
-    "beverage": "Sprite",
-    "dessert": None,
-}
+import foo
 ```
 
-
-```python
-MISSING = object()
-
-def get_menu_item(key, default=None):
-    value = madpy_menu.get(key, MISSING)
-    if value is MISSING:
-        return default
-    return value
-```
-
-
-```python
-get_menu_item("salad", default="Sorry, not tonight!")
-```
-
-
-
-
-    'Sorry, not tonight!'
-
+    loading foo!
 
 
 
 ```python
-get_menu_item("dessert", default="Sorry, not tonight!") is None
+"foo" in sys.modules
 ```
 
 
@@ -181,68 +128,23 @@ get_menu_item("dessert", default="Sorry, not tonight!") is None
 
 
 ```python
-print(MISSING)
-```
+def run():
+    return foo.greet()
 
-    <object object at 0x7bf5c437d710>
-
-
-#### Can we make it prettier?
-
-
-```python
-madpy_menu = {
-    "pizza": "Ian's",
-    "beverage": "Sprite",
-    "dessert": None,
-}
-```
-
-
-```python
-from enum import StrEnum
-
-class Missing(StrEnum):
-    MISSING = "MISSING"
-
-def get_menu_item(key, default=None):
-    value = madpy_menu.get(key, Missing.MISSING)
-    if value is Missing.MISSING:
-        return default
-    return value
-```
-
-
-```python
-get_menu_item("salad", default="Sorry, not tonight!")
+run()
 ```
 
 
 
 
-    'Sorry, not tonight!'
+    'hello from foo'
 
 
 
 
 ```python
-get_menu_item("dessert", default="Sorry, not tonight!") is None
+del sys.modules["foo"]
 ```
-
-
-
-
-    True
-
-
-
-
-```python
-print(Missing.MISSING)
-```
-
-    MISSING
-
 
 #### New in Python 3.15 (to be released in October 2026)
 
@@ -253,67 +155,133 @@ from sys import version
 print(version)
 ```
 
-    3.15.0b2 (main, Jun  2 2026, 22:26:04) [Clang 22.1.3 ]
+    3.15.0b3 (main, Jun 23 2026, 15:19:17) [Clang 22.1.3 ]
 
 
 
 ```python
-from builtins import sentinel
-
-MISSING = sentinel("MISSING")
+lazy import foo
 ```
 
 
 ```python
-madpy_menu = {
-    "pizza": "Ian's",
-    "beverage": "Sprite",
-    "dessert": None,
-}
-```
+lazy import foo
 
-
-```python
-MISSING = sentinel("MISSING")
-
-def get_menu_item(key, default=None):
-    value = madpy_menu.get(key, MISSING)
-    if value is MISSING:
-        return default
-    return value
-```
-
-
-```python
-get_menu_item("salad", default="Sorry, not tonight!")
+"foo" in sys.modules, "foo" in sys.lazy_modules
 ```
 
 
 
 
-    'Sorry, not tonight!'
+    (False, True)
 
 
 
 
 ```python
-get_menu_item("dessert", default="Sorry, not tonight!") is None
+def run():
+    return foo.greet()
+```
+
+
+```python
+"foo" in sys.modules, "foo" in sys.lazy_modules
 ```
 
 
 
 
-    True
+    (False, True)
 
 
 
 
 ```python
-print(MISSING)
+run()
 ```
 
-    MISSING
+    loading foo!
 
+
+
+
+
+    'hello from foo'
+
+
+
+
+```python
+"foo" in sys.modules, "foo" in sys.lazy_modules
+```
+
+
+
+
+    (True, False)
+
+
+
+#### Easy Win 1: retiring `if TYPE_CHECKING:`
+
+```python
+if TYPE_CHECKING:
+    import pandas as pd
+    import numpy as np
+
+def process(df: pd.DataFrame) -> np.ndarray: ...
+```
+
+```python
+lazy import pandas as pd
+lazy import numpy as np
+
+def process(df: pd.DataFrame) -> np.ndarray: ...
+```
+
+No guard. No runtime cost.
+
+#### Easy Win 2: retiring function-level imports
+
+```python
+def render_chart(data):
+    import matplotlib.pyplot as plt
+    ...
+```
+
+```python
+lazy import matplotlib.pyplot as plt
+
+def render_chart(data):
+    ...
+```
+
+Back at the top of the file, PEP 8 and all. Loaded exactly once, on first use.
+
+#### Easy Win 3: when `--help` takes forever
+
+- CLI tools eagerly import everything at startup — even just for `--help`
+- Profile it: `python -X importtime yourcli.py --help`
+- PEP 810 reports 50–70% faster startup in some real-world CLIs
+
+#### What's not allowed
+
+- No `lazy` inside functions, classes, or `try`/`except` blocks
+- No `lazy import *`
+- No `lazy from __future__ import annotations`
+
+`lazy` only works as a module-level statement.
+
+
+```python
+from pathlib import Path
+
+Path("foo.py").unlink(missing_ok=True)
+```
+
+# Sponsor
+
+<center><img src="img/Fetch_Rewards_Logo.jpg" alt="Sponsor Logo: Fetch Rewards" width="500px"/></center>
 
 # Want more MadPy?
 
@@ -344,6 +312,6 @@ print(MISSING)
 
 ### Talk to your employer about Sponsorship!
 
-<img src="https://madpy.com/static/images/2026-06-04-Agentic-Coding-1550x1100.png" alt="Logo for the MadPy talk" />
+<img src="https://madpy.com/static/images/2026-07-09-MadPy-Lightning-Talks-social-card-1800x1200.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
