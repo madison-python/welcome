@@ -44,244 +44,177 @@ https://github.com/madison-python/code-of-conduct
 
 # Python Warm-Up
 
-#### Meet `foo.py`
+```text
+            Poe, E.
+          Near a Raven
 
+Midnights so dreary, tired and weary.
+    Silently pondering volumes extolling all by-now obsolete lore.
+During my rather long nap - the weirdest tap!
+    An ominous vibrating sound disturbing my chamber's antedoor.
+        "This", I whispered quietly, "I ignore".
 
-```python
-%%writefile foo.py
-print("loading foo!")
-
-def greet():
-    return "hello from foo"
+Perfectly, the intellect remembers: the ghostly fires, a glittering ember.
+    Inflamed by lightning's outbursts, windows cast penumbras upon this floor.
+Sorrowful, as one mistreated, unhappy thoughts I heeded:
+    That inimitable lesson in elegance - Lenore -
+        Is delighting, exciting...nevermore.
 ```
 
-    Writing foo.py
-
-
-#### The baseline: importing `foo`
+Make this poem a variable:
 
 
 ```python
-import foo
-```
+poem_text = """
+            Poe, E.
+          Near a Raven
 
-    loading foo!
+Midnights so dreary, tired and weary.
+    Silently pondering volumes extolling all by-now obsolete lore.
+During my rather long nap - the weirdest tap!
+    An ominous vibrating sound disturbing my chamber's antedoor.
+        "This", I whispered quietly, "I ignore".
 
-
-
-```python
-def run():
-    return foo.greet()
-```
-
-
-```python
-run()
-```
-
-
-
-
-    'hello from foo'
-
-
-
-
-```python
-import sys
-del sys.modules["foo"]
-```
-
-#### Watching `sys.modules` (eager import)
-
-
-```python
-"foo" in sys.modules
+Perfectly, the intellect remembers: the ghostly fires, a glittering ember.
+    Inflamed by lightning's outbursts, windows cast penumbras upon this floor.
+Sorrowful, as one mistreated, unhappy thoughts I heeded:
+    That inimitable lesson in elegance - Lenore -
+        Is delighting, exciting...nevermore.
+"""
 ```
 
 
-
-
-    False
-
-
-
-
 ```python
-import foo
+import re
+
+
+def words(input_poem: str) -> list[str]:
+    """
+    Convert a poem to a list of words from the poem. 
+    Whitespace is the separator. Punctuation is dropped.
+    """
+    return re.findall(r"[A-Za-z]+", input_poem.replace("'", ""))
 ```
 
-    loading foo!
-
-
 
 ```python
-"foo" in sys.modules
+words_of_poem = words(poem_text)
+words_of_poem[:8]
 ```
 
 
 
 
-    True
+    ['Poe', 'E', 'Near', 'a', 'Raven', 'Midnights', 'so', 'dreary']
 
 
 
 
 ```python
-def run():
-    return foo.greet()
-
-run()
+len(words_of_poem)
 ```
 
 
 
 
-    'hello from foo'
+    80
+
+
+
+Investigate the words a little
+
+
+```python
+max(len(word) for word in words_of_poem)
+```
+
+
+
+
+    10
 
 
 
 
 ```python
-del sys.modules["foo"]
+min(len(word) for word in words_of_poem)
 ```
 
-#### New in Python 3.15 (to be released in October 2026)
+
+
+
+    1
+
+
+
+Use matplotlib to get a sense of the distribution of word length
 
 
 ```python
-from sys import version
+import matplotlib.pyplot as plt
 
-print(version)
-```
-
-    3.15.0b3 (main, Jun 23 2026, 15:19:17) [Clang 22.1.3 ]
-
-
-
-```python
-lazy import foo
-```
-
-
-```python
-lazy import foo
-
-"foo" in sys.modules, "foo" in sys.lazy_modules
+lengths = [len(word) for word in words_of_poem]
+low, high = 1, 20
+plt.figure(figsize=(6.4, 2.4))
+plt.hist(lengths, bins=range(low, high + 2))
+plt.xticks([n + 0.5 for n in range(low, high + 1)], range(low, high + 1))
+plt.xlabel("Word length")
+plt.ylabel("Count")
+plt.title("Length of Word Histogram")
+plt.show()
 ```
 
 
+    
+![png](output_15_0.png)
+    
 
 
-    (False, True)
-
-
+Look at the word lengths, one by one
 
 
 ```python
-def run():
-    return foo.greet()
+word_lengths = [len(word) for word in words_of_poem[:8]]
 ```
 
 
 ```python
-"foo" in sys.modules, "foo" in sys.lazy_modules
+print(word_lengths[0], ".", *word_lengths[1:], "...", sep="")
 ```
 
-
-
-
-    (False, True)
-
+    3.1415926...
 
 
 
 ```python
-run()
+print(poem_text)
 ```
 
-    loading foo!
+    
+                Poe, E.
+              Near a Raven
+    
+    Midnights so dreary, tired and weary.
+        Silently pondering volumes extolling all by-now obsolete lore.
+    During my rather long nap - the weirdest tap!
+        An ominous vibrating sound disturbing my chamber's antedoor.
+            "This", I whispered quietly, "I ignore".
+    
+    Perfectly, the intellect remembers: the ghostly fires, a glittering ember.
+        Inflamed by lightning's outbursts, windows cast penumbras upon this floor.
+    Sorrowful, as one mistreated, unhappy thoughts I heeded:
+        That inimitable lesson in elegance - Lenore -
+            Is delighting, exciting...nevermore.
+    
 
 
+#### Original source:
+_Near A Raven_ by Mike Keith  
+[https://www.cadaeic.net/naraven.htm](https://www.cadaeic.net/naraven.htm)  
 
-
-
-    'hello from foo'
-
-
-
-
-```python
-"foo" in sys.modules, "foo" in sys.lazy_modules
-```
-
-
-
-
-    (True, False)
-
-
-
-#### Easy Win 1: retiring `if TYPE_CHECKING:`
-
-```python
-if TYPE_CHECKING:
-    import pandas as pd
-    import numpy as np
-
-def process(df: pd.DataFrame) -> np.ndarray: ...
-```
-
-```python
-lazy import pandas as pd
-lazy import numpy as np
-
-def process(df: pd.DataFrame) -> np.ndarray: ...
-```
-
-No guard. No runtime cost.
-
-#### Easy Win 2: retiring function-level imports
-
-```python
-def render_chart(data):
-    import matplotlib.pyplot as plt
-    ...
-```
-
-```python
-lazy import matplotlib.pyplot as plt
-
-def render_chart(data):
-    ...
-```
-
-Back at the top of the file, PEP 8 and all. Loaded exactly once, on first use.
-
-#### Easy Win 3: when `--help` takes forever
-
-- CLI tools eagerly import everything at startup — even just for `--help`
-- Profile it: `python -X importtime yourcli.py --help`
-- PEP 810 reports 50–70% faster startup in some real-world CLIs
-
-#### What's not allowed
-
-- No `lazy` inside functions, classes, or `try`/`except` blocks
-- No `lazy import *`
-- No `lazy from __future__ import annotations`
-
-`lazy` only works as a module-level statement.
-
-
-```python
-from pathlib import Path
-
-Path("foo.py").unlink(missing_ok=True)
-```
-
-# Sponsor
-
-<center><img src="img/Fetch_Rewards_Logo.jpg" alt="Sponsor Logo: Fetch Rewards" width="500px"/></center>
+#### H/T:
+Python 3.14.0 release notes by Hugo van Kemenade (release manager)  
+[https://www.python.org/downloads/release/python-3140/](https://www.python.org/downloads/release/python-3140/)  
 
 # Want more MadPy?
 
@@ -312,6 +245,6 @@ Path("foo.py").unlink(missing_ok=True)
 
 ### Talk to your employer about Sponsorship!
 
-<img src="https://madpy.com/static/images/2026-07-09-MadPy-Lightning-Talks-social-card-1800x1200.png" alt="Logo for the MadPy talk" />
+<img src="https://madpy.com/static/images/2026-08-13-Orchestrated-social-card-1997x1331.png" alt="Logo for the MadPy talk" />
 
 <!-- [[[end]]] -->
