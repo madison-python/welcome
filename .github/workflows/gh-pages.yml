@@ -40,5 +40,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
-          exclude_assets: '.github,.venv,_freeze,.quarto'
+          # .gitignore must not be published: it ignores the build outputs
+          # (index.html, welcome_files/), and the action's `git add --all` on
+          # gh-pages would honor it and silently drop the rendered deck.
+          exclude_assets: '.github,.venv,_freeze,.quarto,.gitignore'
           publish_branch: gh-pages
