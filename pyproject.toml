@@ -1,12 +1,22 @@
 [project]
 name = "welcome"
-version = "2025.1.3"
+version = "2026.11.0"
 description = "Welcome slides for MadPy"
 readme = "README.md"
+# The Python that runs the code cells comes from .python-version
+# (e.g. a pre-release like 3.16.0a1); CI overrides it with --python.
 requires-python = ">=3.13"
 dependencies = [
-  "cogapp",
-  "jupyterlab",
-  "nbconvert",
-  "notebook",
+  "quarto-cli==1.11.9",
+  "ipykernel",
+  "nbclient",
+  "nbformat",
+  "pyyaml",
 ]
+
+[tool.uv]
+package = false
+# quarto-cli depends on the `jupyter` metapackage (JupyterLab, Notebook,
+# jupyter-server...), which won't build on pre-release Pythons. Quarto only
+# needs nbclient + ipykernel to run cells, so drop the metapackage.
+override-dependencies = ["jupyter; sys_platform == 'never'"]

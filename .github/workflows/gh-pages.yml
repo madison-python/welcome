@@ -1,9 +1,11 @@
+# Renders welcome.qmd with Quarto and publishes it to GitHub Pages
+# (https://madpy.com/welcome). Only pushes to master deploy.
 name: Publish to GitHub Pages
 
 on:
   push:
     branches-ignore:
-      - 'gh-pages' # excludes gh-pages
+      - 'gh-pages'
 
 jobs:
   publish:
@@ -11,24 +13,32 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Check out
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Jupyter convert
+      - uses: astral-sh/setup-uv@v6
+
+      # CI must never execute code: it would run on stable Python, not the
+      # pre-release the deck is demoing. Quarto's freeze hash is the MD5 of
+      # the .qmd, so a mismatch means "you edited without rendering locally".
+      - name: Frozen outputs match welcome.qmd?
         run: |
-            sudo apt update
-            sudo apt install python3-pip
-            sudo apt install pipx
-            pipx install nbconvert cogapp
-            pipx inject cogapp nbconvert
-            jupyter-nbconvert welcome.ipynb --to slides
-            mv welcome.slides.html index.html
-            cog --check README.md
+          frozen=$(jq -r .hash _freeze/welcome/execute-results/html.json)
+          actual=$(md5sum welcome.qmd | cut -d' ' -f1)
+          if [ "$frozen" != "$actual" ]; then
+            echo "::error::_freeze is stale. Run the local render (see README) and commit _freeze/."
+            exit 1
+          fi
+
+      # Same lockfile, but a stable Python: nothing executes, so the
+      # pre-release in .python-version isn't needed here.
+      - name: Render slides
+        run: uv run --locked --python 3.14 quarto render
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
+          exclude_assets: '.github,.venv,_freeze,.quarto'
           publish_branch: gh-pages

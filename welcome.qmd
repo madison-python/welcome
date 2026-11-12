@@ -1,0 +1,60 @@
+---
+# NB: keep an explicit title. Without one, Quarto's jupyter engine (1.11.9)
+# steals the first `##` heading that follows a code cell and makes it the title.
+title: "Welcome to MadPy!"
+title-logo: img/madpy-logo.png        # shown on the title slide (title-slide.html)
+title-logo-alt: The MadPy Magpie
+# Keep this even in months without code cells: it makes Quarto always write
+# _freeze/, so CI's freeze check works the same every month.
+# (archive/2026-07-welcome.qmd shows code cells, fragments, and a pre-release.)
+jupyter: python3
+---
+
+## Organizers
+
+:::: {.columns .organizers}
+::: {.column width="33%"}
+![Ed Rogers](img/edrogers.jpg){fig-alt="Ed Rogers"}
+:::
+::: {.column width="33%"}
+![David Hoese](img/djhoese.jpg){fig-alt="David Hoese"}
+:::
+::: {.column width="33%"}
+![Josh Karpel](img/joshkarpel.jpg){fig-alt="Josh Karpel"}
+:::
+::::
+
+## Code of Conduct
+
+**MadPy is a community group** and open to all experience levels. We are committed to **a safe, professional environment**
+
+### Our Commitment to You
+
+We are enthusiastically focused on improving our event and making it a place that is welcoming to all. All reports will be taken seriously, handled respectfully, and dealt with in a timely manner.
+
+Learn more about the MadPy Code of Conduct:
+
+<https://github.com/madison-python/code-of-conduct>
+
+## Sponsor
+
+![](img/workday-logo.png){fig-align="center" width="500px" fig-alt="Sponsor Logo: Workday"}
+
+## Want more MadPy?
+
+::: {.links}
+- ![](img/madpy-logo.png){width="45px" fig-alt="MadPy"} **[madpy.com](https://madpy.com)**
+- ![](img/meetup-logo.png){width="25px" fig-alt="Meetup"} [meetup.com/madpython](https://www.meetup.com/madpython/)
+- ![](img/github-logo.png){width="25px" fig-alt="GitHub"} [github.com/madison-python](https://github.com/madison-python)
+- ![](img/fosstodon-logo.png){width="25px" fig-alt="Mastodon"} [fosstodon.org/@madpy](https://fosstodon.org/@madpy)
+- ![](img/slack-logo.png){width="25px" fig-alt="Slack"} [slack.madpy.com](https://slack.madpy.com)
+- ![](img/linkedin-logo.png){width="25px" fig-alt="LinkedIn"} [linkedin.com/company/madpy](https://linkedin.com/company/madpy)
+:::
+
+## The Best Way to Help MadPy
+
+### Talk to your employer about Sponsorship!
+
+---
+
+![](https://madpy.com/static/images/2026-11-12-Whats-New-in-Python-3-15-social-card-1536x1024.png){fig-alt="What's New in Python 3.15, with Josh Karpel"}
