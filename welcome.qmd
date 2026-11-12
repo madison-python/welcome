@@ -36,6 +36,34 @@ Learn more about the MadPy Code of Conduct:
 
 <https://github.com/madison-python/code-of-conduct>
 
+## Software Heads Up {.heads-up}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](img/upgrade-all-the-things.png){fig-alt="Upgrade all the things!"}
+:::
+::: {.column width="50%"}
+![](img/emudhra-warning-page.png){.qr fig-alt="QR code for https://emudhra.we-have-a-problem.com"}
+
+<https://emudhra.we-have-a-problem.com>
+:::
+::::
+
+Upgrade: your OS, `python`, `uv`, `pip`, `conda`, `pixi`, `node`/`nvm`, `go`, `rustup`, `docker`, `Claude Code`, `mise`, `VS Code`, ...
+
+## Bonus Round {.bonus}
+
+:::: {.columns}
+::: {.column width="45%"}
+![](img/php-still-alive.png){.meme fig-alt="Meme. 'How are you still alive?' PHP: 'I have no idea.'"}
+:::
+::: {.column width="55%"}
+![<https://www.php2shell.com>](img/php-warning-page.png){.qr fig-alt="QR code for https://www.php2shell.com"}
+
+Running PHP anywhere? Upgrade it.
+:::
+::::
+
 ## Sponsor
 
 ![](img/workday-logo.png){fig-align="center" width="500px" fig-alt="Sponsor Logo: Workday"}
