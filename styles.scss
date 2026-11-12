@@ -1,0 +1,124 @@
+/*-- scss:defaults --*/
+
+// Typography matches the Jupyter/nbconvert deck as presented on Ed's machine:
+//   headings: News Cycle (reveal.js "simple" theme), regular weight, black
+//   body:     Noto Sans (what JupyterLab's `system-ui` resolves to under Xfce),
+//             pinned here so every viewer gets it, not just Xubuntu
+// Fonts load from Google Fonts at view time (needs network at the venue).
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+$font-family-sans-serif: "Noto Sans", sans-serif;
+$presentation-heading-font: "News Cycle", Impact, sans-serif;
+$presentation-heading-font-weight: 400;
+$presentation-heading-color: #000;
+$presentation-heading-line-height: 1.2;
+$body-color: rgba(0, 0, 0, 0.87);
+$link-color: #0d47a1;
+
+// Sizes: the nbconvert deck's CSS sizes (20px body, 75.4px titles, 31px
+// subheads). With the same 960x700 geometry (see _quarto.yml), reveal.js scales
+// both decks by the same factor on any screen (x1.671 in Ed's Vivaldi window).
+// Jupyter's slide titles are <h1>, Quarto's are <h2>; both get the title size.
+$presentation-font-size-root: 20px;
+$presentation-line-height: 1.3;
+$presentation-h1-font-size: 3.77em;
+$presentation-h2-font-size: 3.77em;
+$presentation-h3-font-size: 1.55em;
+$presentation-block-margin: 20px;   // Jupyter: p/img/table margins are 20px
+
+/*-- scss:rules --*/
+
+// ---- Slide geometry -------------------------------------------------------
+// The nbconvert deck puts every slide's content in a 796px column at x=139:
+// JupyterLab's (empty) prompt column and cell padding take the left 139px,
+// and 20px+5px of padding sit above, below, and to the right.
+.reveal .slides > section {
+  box-sizing: border-box;     // keep the slide 960 wide; padding goes inside
+  padding: 25px 25px 25px 139px;
+}
+
+// Jupyter's spacing (its content sits in a table-cell, so the title's top
+// margin doesn't collapse away).
+.reveal .slides section h1,
+.reveal .slides section h2 {
+  margin: 0.6em 0 20px;
+}
+.reveal .slides section h3 {
+  margin: 0 0 20px;
+}
+// JupyterLab trims the last block's bottom margin.
+.reveal .slides section p:last-child,
+.reveal .slides section div.quarto-figure:last-child {   // div: Quarto also puts
+                                                          // the class on the <img>
+  margin-bottom: 0.5em;
+}
+.reveal .slides section h3:last-child {
+  margin-bottom: 0.4em;
+}
+
+// ---- Title slide (see title-slide.html) ----------------------------------
+.reveal .quarto-title-block .title {
+  text-align: center;
+}
+.reveal .quarto-title-block .title-logo {
+  display: block;
+  width: 35%;                 // <center><img width="35%"> in the notebook
+  margin: 72px auto 39px;     // the notebook's <br> above; inline-image line
+}                             // slack + margins below
+
+// ---- Organizers: columns styled like the notebook's HTML table ------------
+.reveal .organizers .column {
+  width: 33.333% !important;  // overrides Quarto's inline width:33%
+}
+.reveal .slides section .organizers .quarto-figure,
+.reveal .organizers figure {
+  margin: 0;                  // Quarto's figure wrapper is 8px narrower than
+  width: 100%;                // the column, which shrank the photos
+}
+.reveal .organizers figure > p {          // photo "row"
+  margin: 0;
+  padding: 4px 10px;
+  text-align: left;
+  border-bottom: 0.6px solid rgba(0, 0, 0, 0.87);   // 1 screen px at x1.67
+}
+.reveal .organizers img {
+  width: 95%;                 // reveal's max-width for images in a cell
+  margin: 20px 0;
+}
+// Quarto shrinks captions to 0.7em; the notebook shows names at body size on a
+// light grey row. (Must beat Quarto's `.reveal .slide figure>figcaption`.)
+.reveal .slide .organizers figure > figcaption {
+  font-size: 1em;
+  margin: 0;
+  padding: 24px 10px;
+  background: #f5f5f5;
+}
+
+// ---- Links: no bullets, centered, icon column like the notebook's table ---
+.reveal .links ul {
+  display: table;             // reveal makes lists inline-block; table centers
+  list-style: none;
+  margin: 0 auto 10px;
+  padding: 0;
+}
+.reveal .slides section .links li {   // beat Quarto's list-item margins
+  display: grid;
+  grid-template-columns: 45px auto;
+  column-gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0 10px;
+  height: 79px;
+}
+.reveal .slides section .links li:first-child {
+  height: 97px;
+}
+.reveal .slides section .links li img {
+  align-self: start;         // notebook: icon at top of its cell (4px pad +
+  margin: 24px 0 0;           // 20px img margin); the link text is centered
+}
+
+// Quarto's theme pins links to weight 400, so **[link](...)** wasn't bold.
+.reveal strong a, .reveal b a {
+  font-weight: inherit;
+}

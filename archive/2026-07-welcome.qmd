@@ -1,0 +1,236 @@
+---
+# NB: keep an explicit title. Without one, Quarto's jupyter engine (1.11.9)
+# steals the first `##` heading that follows a code cell and makes it the title.
+title: "Welcome to MadPy!"
+title-slide-attributes:
+  data-background-image: img/madpy-logo.png
+  data-background-size: 32%
+  data-background-position: 50% 85%
+jupyter: python3
+---
+
+## Organizers
+
+:::: {.columns .organizers}
+::: {.column width="33%"}
+![Ed Rogers](img/edrogers.jpg){fig-alt="Ed Rogers"}
+:::
+::: {.column width="33%"}
+![David Hoese](img/djhoese.jpg){fig-alt="David Hoese"}
+:::
+::: {.column width="33%"}
+![Josh Karpel](img/joshkarpel.jpg){fig-alt="Josh Karpel"}
+:::
+::::
+
+## Code of Conduct
+
+**MadPy is a community group** and open to all experience levels. We are committed to **a safe, professional environment**
+
+### Our Commitment to You
+
+We are enthusiastically focused on improving our event and making it a place that is welcoming to all. All reports will be taken seriously, handled respectfully, and dealt with in a timely manner.
+
+Learn more about the MadPy Code of Conduct:
+
+<https://github.com/madison-python/code-of-conduct>
+
+# Python Warm-Up
+
+## Meet `foo.py`
+
+```{python}
+%%writefile foo.py
+print("loading foo!")
+
+def greet():
+    return "hello from foo"
+```
+
+## The baseline: importing `foo`
+
+```{python}
+import foo
+```
+
+```{python}
+def run():
+    return foo.greet()
+```
+
+::: {.fragment}
+```{python}
+run()
+```
+:::
+
+::: {.fragment}
+```{python}
+import sys
+del sys.modules["foo"]
+```
+:::
+
+## Watching `sys.modules` (eager import)
+
+::: {.fragment}
+```{python}
+"foo" in sys.modules
+```
+:::
+
+::: {.fragment}
+```{python}
+import foo
+```
+:::
+
+::: {.fragment}
+```{python}
+"foo" in sys.modules
+```
+:::
+
+::: {.fragment}
+```{python}
+def run():
+    return foo.greet()
+
+run()
+```
+:::
+
+::: {.fragment}
+```{python}
+del sys.modules["foo"]
+```
+:::
+
+## New in Python 3.15 (to be released in October 2026)
+
+```{python}
+from sys import version
+
+print(version)
+```
+
+```{python}
+lazy import foo
+```
+
+---
+
+```{python}
+lazy import foo
+
+"foo" in sys.modules, "foo" in sys.lazy_modules
+```
+
+::: {.fragment}
+```{python}
+def run():
+    return foo.greet()
+```
+:::
+
+::: {.fragment}
+```{python}
+"foo" in sys.modules, "foo" in sys.lazy_modules
+```
+:::
+
+::: {.fragment}
+```{python}
+run()
+```
+:::
+
+::: {.fragment}
+```{python}
+"foo" in sys.modules, "foo" in sys.lazy_modules
+```
+:::
+
+## Easy Win 1: retiring `if TYPE_CHECKING:`
+
+```python
+if TYPE_CHECKING:
+    import pandas as pd
+    import numpy as np
+
+def process(df: pd.DataFrame) -> np.ndarray: ...
+```
+
+. . .
+
+```python
+lazy import pandas as pd
+lazy import numpy as np
+
+def process(df: pd.DataFrame) -> np.ndarray: ...
+```
+
+No guard. No runtime cost.
+
+## Easy Win 2: retiring function-level imports
+
+```python
+def render_chart(data):
+    import matplotlib.pyplot as plt
+    ...
+```
+
+. . .
+
+```python
+lazy import matplotlib.pyplot as plt
+
+def render_chart(data):
+    ...
+```
+
+Back at the top of the file, PEP 8 and all. Loaded exactly once, on first use.
+
+## Easy Win 3: when `--help` takes forever
+
+- CLI tools eagerly import everything at startup — even just for `--help`
+- Profile it: `python -X importtime yourcli.py --help`
+- PEP 810 reports 50–70% faster startup in some real-world CLIs
+
+## What's not allowed
+
+- No `lazy` inside functions, classes, or `try`/`except` blocks
+- No `lazy import *`
+- No `lazy from __future__ import annotations`
+
+`lazy` only works as a module-level statement.
+
+```{python}
+#| include: false
+from pathlib import Path
+
+Path("foo.py").unlink(missing_ok=True)
+```
+
+# Sponsor
+
+![](img/Fetch_Rewards_Logo.jpg){fig-align="center" width="500px" fig-alt="Sponsor Logo: Fetch Rewards"}
+
+## Want more MadPy?
+
+::: {.links}
+- ![](img/madpy-logo.png){width="45px" fig-alt="MadPy"} **[madpy.com](https://madpy.com)**
+- ![](img/meetup-logo.png){width="25px" fig-alt="Meetup"} [meetup.com/madpython](https://www.meetup.com/madpython/)
+- ![](img/github-logo.png){width="25px" fig-alt="GitHub"} [github.com/madison-python](https://github.com/madison-python)
+- ![](img/fosstodon-logo.png){width="25px" fig-alt="Mastodon"} [fosstodon.org/@madpy](https://fosstodon.org/@madpy)
+- ![](img/slack-logo.png){width="25px" fig-alt="Slack"} [slack.madpy.com](https://slack.madpy.com)
+- ![](img/linkedin-logo.png){width="25px" fig-alt="LinkedIn"} [linkedin.com/company/madpy](https://linkedin.com/company/madpy)
+:::
+
+## The Best Way to Help MadPy
+
+### Talk to your employer about Sponsorship!
+
+---
+
+![](https://madpy.com/static/images/2026-07-09-MadPy-Lightning-Talks-social-card-1800x1200.png){fig-alt="Logo for the MadPy talk"}

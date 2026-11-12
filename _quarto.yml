@@ -1,0 +1,30 @@
+project:
+  type: default
+  render:
+    - welcome.qmd
+
+execute:
+  echo: true
+  # Run code locally (on whatever pre-release Python .python-version names),
+  # commit the results in _freeze/, and CI just reuses them -- no Python needed.
+  freeze: auto
+
+format:
+  revealjs:
+    output-file: index.html
+    theme: [default, styles.scss]
+    # Same slide geometry as the nbconvert deck, so both scale identically
+    # on any screen (Quarto's defaults are 1050x700 with a 10% margin).
+    width: 960
+    height: 700
+    margin: 0.04
+    center: true          # vertically center slide content, like nbconvert
+    auto-stretch: false   # don't blow a lone image up to fill the slide
+    # Title slide with the logo inside it (title-logo in welcome.qmd)
+    template-partials:
+      - title-slide.html
+    slide-number: true
+    hash-type: number
+    embed-resources: false
+    code-line-numbers: false
+    highlight-style: github

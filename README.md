@@ -1,76 +1,76 @@
-<!-- [[[cog
-import cog
-from nbconvert.exporters import MarkdownExporter
-from nbconvert.preprocessors import RegexRemovePreprocessor
+# MadPy Welcome Slides
 
-rrp = RegexRemovePreprocessor()
-rrp.patterns = (r"<style>",)
-e = MarkdownExporter()
-e.register_preprocessor(rrp, enabled=True)
-(body, resources) = e.from_filename("welcome.ipynb")
-cog.out(f"\n{body}\n")
-]]] -->
+The slides shown at the start of each [MadPy](https://madpy.com) meetup:
+welcome, organizers, Code of Conduct, a short Python warm-up, sponsors, and
+the night's talk.
 
-<h1><center>Welcome to MadPy!</center></h1>
-<br>
-<center><img src="img/madpy-logo.png" alt="The MadPy Magpie" width="35%"/></center>
+**See the current deck at <https://madpy.com/welcome>.**
 
-# Organizers
+## How it works
 
-<table style="border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
-  <tr>
-    <td><img src="img/edrogers.jpg" alt="Ed Rogers" style="width: 300px;" /></td>
-    <td><img src="img/djhoese.jpg" alt="David Hoese" style="width: 300px;" /></td>
-    <td><img src="img/joshkarpel.jpg" alt="Josh Karpel" style="width: 300px;" /></td>
-  </tr><tr>
-    <td><p class="caption">Ed Rogers</p></td>
-    <td><p class="caption">David Hoese</p></td>
-    <td><p class="caption">Josh Karpel</p></td>
-  </tr>
-</table>
+- `welcome.qmd` is the deck: [Quarto](https://quarto.org) markdown, rendered
+  to [reveal.js](https://revealjs.com) slides.
+- Code cells really run. Their outputs are saved in `_freeze/`, which is
+  committed, much like the outputs saved inside a Jupyter notebook.
+- On every push, GitHub Actions renders the deck from `welcome.qmd` +
+  `_freeze/` and publishes it to GitHub Pages. CI never runs Python code, so
+  the deck can demo a Python release that isn't out yet.
 
-# Code of Conduct
+| File | Purpose |
+| --- | --- |
+| `welcome.qmd` | Slide content |
+| `_quarto.yml` | Render settings (reveal.js options, slide size, freeze) |
+| `styles.scss` | Fonts, sizes, and layout |
+| `title-slide.html` | Title slide template (adds the logo from `title-logo:`) |
+| `_freeze/` | Saved outputs of the code cells (commit this) |
+| `pyproject.toml`, `uv.lock`, `.python-version` | Quarto + the Python that runs the code cells |
+| `img/` | Organizer photos, logos, the current sponsor's logo |
+| `archive/` | Past decks kept as examples (not rendered). `2026-07-welcome.qmd` shows code cells, click-to-reveal fragments, and a pre-release demo. |
 
-**MadPy is a community group** and open to all experience levels. We are committed to **a safe, professional environment**
+The look (News Cycle headings, Noto Sans body, layout) recreates the earlier
+Jupyter/nbconvert deck. Fonts load from Google Fonts, so the deck needs a
+network connection to look right.
 
-### Our Commitment to You
+## Monthly update
 
-We are enthusiastically focused on improving our event and making it a place that is welcoming to all. All reports will be taken seriously, handled respectfully, and dealt with in a timely manner.
+1. Edit `welcome.qmd`: sponsor, social card, warm-up.
+2. Render locally (this runs the code cells and refreshes `_freeze/`):
 
-Learn more about the MadPy Code of Conduct:
+   ```sh
+   uv run quarto render
+   ```
 
-https://github.com/madison-python/code-of-conduct
+   (`uv run quarto preview` live-reloads in a browser while you edit.)
 
+3. Check `index.html` in a browser, then commit `welcome.qmd` **and**
+   `_freeze/`.
 
-# Want more MadPy?
+Render after *every* edit, even text-only ones. CI checks that `_freeze/`
+matches `welcome.qmd` and fails if it doesn't.
 
+## Demoing a pre-release Python
 
-<table style="border:none; border-collapse:collapse; cellspacing:0; cellpadding:0">
-  <tr style="background-color: transparent; border: none;">
-    <td style="border: none;"><img src="img/madpy-logo.png" alt="MadPy" style="width: 45px;" /></td><td style="vertical-align: middle; border: none;"><b><a href="https://madpy.com">madpy.com</a></b></td>
-  </tr>
-  <tr style="background-color: transparent; border: none;">
-    <td style="border: none;"><img src="img/meetup-logo.png" alt="Meetup" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://www.meetup.com/madpython/">meetup.com/madpython</a></td>
-  </tr>
-  <tr style="background-color: transparent; border: none;">
-    <td style="border: none;"><img src="img/github-logo.png" alt="GitHub" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://github.com/madison-python">github.com/madison-python</a></td>
-  </tr>
-  <tr style="background-color: transparent; border: none;">
-    <td style="border: none;"><img src="img/fosstodon-logo.png" alt="Mastodon" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://fosstodon.org/@madpy">fosstodon.org/@madpy</a></td>
-  </tr>
-  <tr style="background-color: transparent; border: none;">
-    <td style="border: none;"><img src="img/slack-logo.png" alt="Slack" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://slack.madpy.com">slack.madpy.com</a></td>
-  </tr>
-  <tr style="background-color: transparent; border: none;">
-    <td style="border: none;"><img src="img/linkedin-logo.png" alt="LinkedIn" style="width: 25px;" /></td><td style="vertical-align: middle; border: none;"><a href="https://linkedin.com/company/madpy">linkedin.com/company/madpy</a></td>
-  </tr>
-</table>
+```sh
+uv python pin 3.16.0a1
+```
 
+Then render as usual. `uv run` rebuilds the environment on the new Python.
+The `quarto-cli` package normally pulls in all of Jupyter, which often won't
+build on alphas and betas, so `pyproject.toml` overrides that dependency
+away. Quarto only needs `nbclient` and `ipykernel` to run cells.
 
-# The Best Way to Help MadPy
+## Gotchas
 
-### Talk to your employer about Sponsorship!
+- Keep the `title:` in `welcome.qmd`'s front matter. Without it, Quarto's
+  Jupyter engine (1.11.9) takes the first `##` heading after a code cell and
+  makes it the document title.
+- Use `##` for every slide title. A `#` heading starts a section, which nests
+  the following slides and changes their URLs (`#/3/1` instead of `#/4`).
+- Put the current sponsor's logo in `img/`. `img/old_logos/` is ignored by
+  git, so anything referenced from there is missing on the live site.
 
-<img src="https://madpy.com/static/images/2026-10-08-Claude-Stress-social-card-1455x764.png" alt="Logo for the MadPy talk" /> 
+## History
 
-<!-- [[[end]]] -->
+Until November 2026 the deck was a Jupyter notebook (`welcome.ipynb`) rendered
+with nbconvert, with `cog` copying the slides into this README. It's all in
+the git history.
