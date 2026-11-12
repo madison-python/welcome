@@ -118,6 +118,37 @@ $presentation-block-margin: 20px;   // Jupyter: p/img/table margins are 20px
   margin: 24px 0 0;           // 20px img margin); the link text is centered
 }
 
+// ---- QR-code slides (Software Heads Up, Bonus Round) ----------------------
+// Meme on the left; QR code + URL (+ a line of text) centered on the right.
+.reveal img.qr {
+  width: 220px;
+  image-rendering: pixelated;   // 250px 1-bit QRs: keep modules sharp when scaled
+}
+.reveal .heads-up .column:last-child,
+.reveal .bonus .column:last-child {
+  text-align: center;
+}
+.reveal .heads-up .column a,
+.reveal .bonus .column a {
+  white-space: nowrap;          // never break a URL at a hyphen
+}
+.reveal .bonus .column {
+  vertical-align: middle;       // Quarto columns are inline-blocks: center the
+}                               // QR column against the tall meme
+.reveal .bonus img.meme {
+  height: 400px;                // 488x700 portrait meme: fit under the title
+  width: auto;
+}
+.reveal .heads-up p code {
+  white-space: nowrap;          // keep "Claude Code", "VS Code" on one line
+}
+// QR caption is the URL: body size, not Quarto's 0.7em caption size.
+.reveal .slide .bonus figure > figcaption,
+.reveal .slide.bonus figure > figcaption {
+  font-size: 1em;
+  margin-top: 0;
+}
+
 // Quarto's theme pins links to weight 400, so **[link](...)** wasn't bold.
 .reveal strong a, .reveal b a {
   font-weight: inherit;
