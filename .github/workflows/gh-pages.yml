@@ -13,9 +13,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: astral-sh/setup-uv@v6
+      # setup-uv publishes only exact, immutable tags since v8 (no @v10)
+      - uses: astral-sh/setup-uv@v10.3.3
 
       # CI must never execute code: it would run on stable Python, not the
       # pre-release the deck is demoing. Quarto's freeze hash is the MD5 of
